@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<e:Skin class="FormationSkin" width="750" height="1334" xmlns:ns1="*" xmlns:e="http://ns.egret.com/eui"
+        xmlns:w="http://ns.egret.com/wing">
+    <e:Rect left="0" right="0" top="0" bottom="0" fillAlpha="1" fillColor="0xF6F1E3" />
+    <e:Group horizontalCenter="0" width="750" height="892" verticalCenter="-81">
+        <e:Image y="0" source="hero_pos_bg_png" x="0" />
+        <ns1:BaseBtn id="retBtn" icon="formation_ret_btn_png" skinName="BaseBtnSkin" label="返回" labelColor="0x4C3719"
+                     horizontalCenter="0" bottom="-128" />
+        <e:Group id="grp" x="49" y="124" width="660" />
+    </e:Group>
+</e:Skin>

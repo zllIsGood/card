@@ -1,0 +1,14 @@
+<?xml version='1.0' encoding='utf-8'?>
+<e:Skin class="BoxOpenSkin"
+	 width="750"
+	height="1334" xmlns:e="http://ns.egret.com/eui" xmlns:ns1="*">
+	<e:Rect left="0" right="0" top="0" bottom="0"/>
+	<e:Image source="box_huangjin_opened_png" horizontalCenter="0" bottom="72"/>
+    <e:List id="item_card" anchorOffsetX="0" anchorOffsetY="0" horizontalCenter="0" width="750" top="255">
+			<e:layout>
+				<e:TileLayout orientation="rows" horizontalGap="85" verticalGap="30" requestedRowCount="2" requestedColumnCount="3" horizontalAlign="center" verticalAlign="middle" paddingLeft="50"/>
+			</e:layout>
+		</e:List>
+	<ns1:BaseBtn id="btn_close" x="563" y="66" skinName="BaseBtnSkin" icon="close_icon_png"/>
+	
+</e:Skin>

@@ -1,0 +1,50 @@
+{
+  "engineVersion": "5.2.33",
+  "compilerVersion": "5.2.33",
+  "template": {},
+  "target": {
+    "current": "web"
+  },
+  "modules": [
+    {
+      "name": "egret"
+    },
+    {
+      "name": "eui"
+    },
+    {
+      "name": "assetsmanager"
+    },
+    {
+      "name": "game"
+    },
+    {
+      "name": "tween"
+    },
+    {
+      "name": "socket"
+    },
+    {
+      "name": "promise"
+    },
+    {
+      "name": "dragonBones"
+    },
+    {
+      "name": "particle",
+      "path": "./libs/particle"
+    }
+  ],
+  "targets": {
+    "android": {
+      "appname": "numbercolorgame",
+      "packagename": "com.numbercolorgame"
+    }
+  },
+  "eui": {
+    "exmlRoot": [
+      "resource/eui_skins",
+      "resource/skins"
+    ]
+  }
+}

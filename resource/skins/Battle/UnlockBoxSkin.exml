@@ -1,0 +1,20 @@
+<?xml version='1.0' encoding='utf-8'?>
+<e:Skin class="UnlockBoxSkin"
+	 width="750"
+	height="1334" xmlns:e="http://ns.egret.com/eui" xmlns:ns1="*">
+	<e:Rect left="0" right="0" top="0" bottom="0"/>
+	<e:Group horizontalCenter="0" verticalCenter="0">
+		<e:Rect width="574" height="672" y="-2" scaleX="1" scaleY="1" fillColor="0xFFFFFF" ellipseWidth="85" ellipseHeight="70"/>
+		<e:Rect width="90%" height="128" horizontalCenter="0" fillColor="0xF6F3F7" strokeAlpha="0.5" verticalCenter="15"/>
+		<e:Image id="img_box" horizontalCenter="0" top="-202"/>
+		<e:Image source="icon_boxnamebg_png" horizontalCenter="0" top="0"/>
+		<e:Image source="icon_unlocktime_png" verticalCenter="140" horizontalCenter="-80"/>
+		<e:Image source="icon_award_png" verticalCenter="15" horizontalCenter="-30"/>
+		<e:Label id="lab_boxtype" text="青铜宝箱" y="145" textColor="0x643B02" bold="true" horizontalCenter="0" size="35"/>
+		<ns1:BaseBtn id="btn_unlock" icon="icon_return_png" skinName="BaseBtnSkin" horizontalCenter="0" verticalCenter="250" label="开始解锁" labelColor="0x4C3719"/>
+		<e:Label id="lab_usetime" text="2小时33分钟" verticalCenter="140" textColor="0x6A5B48" bold="true" size="25" horizontalCenter="40"/>
+		<e:Label id="lab_rewardcount" verticalCenter="15" textColor="0x2CBDF7" bold="true" horizontalCenter="30"/>
+	
+	</e:Group>
+	<ns1:BaseBtn id="btn_close" icon="icon_close_png" skinName="BaseBtnSkin" horizontalCenter="0" verticalCenter="490"/>
+</e:Skin>

@@ -1,0 +1,12 @@
+{"file":"fnt_shanghai.png","frames":{
+"1":{"x":92,"y":36,"w":11,"h":32,"offX":0,"offY":0,"sourceW":11,"sourceH":32},
+"2":{"x":29,"y":72,"w":27,"h":33,"offX":0,"offY":0,"sourceW":27,"sourceH":33},
+"3":{"x":31,"y":37,"w":29,"h":33,"offX":0,"offY":0,"sourceW":29,"sourceH":33},
+"4":{"x":0,"y":36,"w":29,"h":34,"offX":0,"offY":0,"sourceW":29,"sourceH":34},
+"5":{"x":0,"y":72,"w":27,"h":34,"offX":0,"offY":0,"sourceW":27,"sourceH":34},
+"6":{"x":68,"y":0,"w":27,"h":34,"offX":0,"offY":0,"sourceW":27,"sourceH":34},
+"7":{"x":87,"y":73,"w":23,"h":32,"offX":0,"offY":0,"sourceW":23,"sourceH":32},
+"8":{"x":36,"y":0,"w":30,"h":35,"offX":0,"offY":0,"sourceW":30,"sourceH":35},
+"9":{"x":62,"y":37,"w":28,"h":34,"offX":0,"offY":0,"sourceW":28,"sourceH":34},
+"-":{"x":0,"y":0,"w":34,"h":34,"offX":0,"offY":0,"sourceW":34,"sourceH":34},
+"0":{"x":58,"y":73,"w":27,"h":33,"offX":0,"offY":0,"sourceW":27,"sourceH":33}}}

@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<e:Skin class="HeroInfoSkin" width="750" height="1334" xmlns:ns1="*" xmlns:e="http://ns.egret.com/eui"
+        xmlns:w="http://ns.egret.com/wing">
+    <e:Rect left="0" right="0" top="0" bottom="0" fillAlpha="0.7" />
+    <e:Group width="750" height="1166" horizontalCenter="0" verticalCenter="84">
+        <e:Rect fillAlpha="1" fillColor="0xF6F1E3" ellipseWidth="10" ellipseHeight="10" left="0" right="0" top="500"
+                bottom="0" />
+        <e:Image x="0" y="0" source="ui_panel_png" />
+        <e:Rect fillAlpha="1" fillColor="0xE6E0D0" ellipseWidth="16" ellipseHeight="16" width="280" height="74" y="432"
+                x="36" />
+        <ns1:BaseBtn id="closeBtn" icon="close_icon_png" right="32" y="-64" skinName="BaseBtn1Skin" />
+        <ns1:BaseBtn id="retBtn" icon="return_png" left="32" y="-64" skinName="BaseBtn1Skin" />
+        <e:Group x="104" y="-64">
+            <e:Image x="0" y="0" source="tab_select_png" />
+            <e:Label text="卡牌详情" x="44" y="16" size="36" textColor="0x925B0B" />
+        </e:Group>
+        <ns1:HeroInfoBase id="infoBase" skinName="HeroInfoBaseSkin" scaleX="0.66" scaleY="0.66" x="28" y="48" />
+        <e:Image id="starImg" x="143" y="73" source="star1_png" />
+        <e:Group x="346" y="80" width="372" height="68">
+            <e:Image source="tab_lab_bg_png" />
+            <e:Image id="hasImg" source="not_has_png" />
+            <e:Label id="nameLab" text="克律塞伊丝" size="32" textColor="0x925B0B" y="18" horizontalCenter="0" />
+        </e:Group>
+        <e:Group x="346" y="184">
+            <e:Image source="heor_lab_all_png" />
+            <e:Image source="info_lab_bg_png" x="112" y="84" />
+            <e:Image source="info_lab_bg_png" x="112" y="148" />
+            <e:Image source="info_lab_bg_png" x="112" y="20" />
+            <e:Label text="生命" size="26" textColor="0xB1A586" y="26" x="32" bold="true" />
+            <e:Label text="攻击" size="26" textColor="0xB1A586" y="90" x="32" bold="true" />
+            <e:Label text="种族" size="26" textColor="0xB1A586" y="156" x="32" bold="true" />
+            <e:Label id="protoLab0" text="5555" size="24" textColor="0x724E1A" y="29" horizontalCenter="45" />
+            <e:Label text="5555" size="24" textColor="0x724E1A" y="93" id="protoLab1" horizontalCenter="45" />
+            <e:Label text="5555" size="24" textColor="0x724E1A" y="159" id="protoLab2" horizontalCenter="45" />
+        </e:Group>
+        <e:Group id="barGrp" x="82" y="457">
+            <e:ProgressBar id="bar" y="7" skinName="ProgressBar3Skin" value="0" x="22" />
+            <e:Image x="0" y="0" source="upgrade_icon_png" />
+            <e:Label id="barLab" text="未拥有" size="20" textColor="0xffffff" y="14" x="64" />
+        </e:Group>
+        <e:Group id="upgradeGrp" x="410" y="436" width="248" height="72">
+            <e:Image source="ungrade_btn_png" />
+            <e:Image source="gold_png" x="56" y="28" />
+            <e:Label id="goldLab" text="10240" size="36" textColor="0x464646" y="25" horizontalCenter="15.5" />
+            <e:Label text="升级" size="16" textColor="0x9B9B9B" y="8" x="120" />
+        </e:Group>
+        <e:List id="list" width="694" y="572" horizontalCenter="0" itemRendererSkinName="HeroInfoItemSkin">
+            <e:ArrayCollection>
+                <e:Array>
+                    <e:Object/>
+                    <e:Object/>
+                    <e:Object/>
+                </e:Array>
+            </e:ArrayCollection>
+            <e:layout>
+                <e:VerticalLayout gap="16" />
+            </e:layout>
+        </e:List>
+    </e:Group>
+</e:Skin>

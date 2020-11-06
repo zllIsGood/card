@@ -1,0 +1,43 @@
+<?xml version='1.0' encoding='utf-8'?>
+<e:Skin class="BattleSkin"
+	 width="750"
+	height="1334" xmlns:e="http://ns.egret.com/eui" xmlns:ns1="*" xmlns:w="http://ns.egret.com/wing">
+	<w:Config id="17511ba5ae2"/>
+	<e:Rect fillColor="0xF6F1E3" left="0" right="0" bottom="0" top="0"/>
+	<e:Image source="battleicon_png" y="453" horizontalCenter="0"/>
+	<e:Group width="750" top="148">
+		<e:Image source="infoBar_png" scale9Grid="177,23,0,0" anchorOffsetY="0" horizontalCenter="0"/>
+		<e:Label text="超级无敌撒亚人" textColor="0x6C4000" bold="true" scaleX="1" scaleY="1" size="40" left="152" top="26"/>
+		<e:Image source="level_bg_png" width="40" height="40" top="26" left="89"/>
+		<e:Image source="score_png" y="24" width="126" height="48" right="89"/>
+		<e:Label text="6000" x="586" y="36" textColor="0x6C4000" bold="true" size="25"/>
+	</e:Group>
+	<ns1:BaseBtn id="btn_battlestart" label="开始战斗" scaleX="1" scaleY="1" icon="exchangeCard_bg_png" skinName="BaseBtnSkin" horizontalCenter="0"  labelColor="0x4C3719" verticalCenter="300"/>
+	<ns1:BaseBtn label="Button" icon="setting_png" top="58" right="122"/>
+	<ns1:BaseBtn label="Button" icon="search_png" right="22" top="58"/>
+	<!-- <e:Scroller width="90%" height="200" y="1046" anchorOffsetY="0" horizontalCenter="0.5" visible="false">
+		<e:Group >
+			
+			<e:layout>
+				<e:HorizontalLayout gap="8"/>
+			</e:layout>
+			<e:List height="200" id="list">
+				<e:layout>
+					<e:HorizontalLayout gap="20"/>
+				</e:layout>
+			</e:List>
+		</e:Group>
+	</e:Scroller> -->
+	<ns1:BaseBtn id="btn_box" right="80" bottom="80" icon="boxIcon_png" skinName="BaseBtnSkin"/>
+	<e:Group id="group_boxhide" visible="false" scaleY="1" bottom="0" left="0" right="0" top="0">
+		<e:Rect fillAlpha="0.5" left="0" right="0" top="0" bottom="0"/>
+		<e:Rect width="750" height="768" ellipseWidth="158" ellipseHeight="0" fillColor="0xF6F1E3" scaleX="1" scaleY="1" bottom="0"/>
+		<e:Image source="boxtitle_png" left="45" bottom="768"/>
+		<ns1:BaseBtn id="btn_close" icon="close_icon_png" right="49" skinName="BaseBtnSkin" bottom="768"/>
+		<e:Group width="750" height="768" id="reward" horizontalCenter="0" bottom="0">
+			<e:List id="list"/>
+			
+		</e:Group>
+		<e:Label text="我的宝箱" textColor="0x925B0B" bold="true" size="35" anchorOffsetX="0" width="169" textAlign="center" bottom="780" left="114"/>
+	</e:Group>
+</e:Skin>

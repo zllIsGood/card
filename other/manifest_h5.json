@@ -1,0 +1,18 @@
+{
+	"initial": [
+		"js/egret.min_836d668b.js",
+		"js/egret.web.min_d1451e99.js",
+		"js/eui.min_493403ce.js",
+		"js/assetsmanager.min_2ef412b7.js",
+		"js/game.min_a9c9e7a1.js",
+		"js/tween.min_6c5a88f9.js",
+		"js/socket.min_afab9be.js",
+		"js/promise.min_83a6a5d.js",
+		"js/dragonBones.min_6252b9c4.js"
+	],
+	"game": [
+		"js/default.thm_1a2f7a8e.js",
+		"js/main.min_fac75315.js"
+	],
+	"res_root": "https://cdnzmg.zmfamily.cn/card/h5/1.0.0/"
+}

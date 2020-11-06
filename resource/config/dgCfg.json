@@ -1,0 +1,23 @@
+{
+    "dg": [
+        {
+            "armature": "armature_bloodatk",
+            "action": [
+                "bloodatk"
+            ]
+        },
+        {
+            "armature": "armature_atk",
+            "action": [
+                "up",
+                "down"
+            ]
+        },
+        {
+            "armature": "armature_mapbg",
+            "action": [
+                "mapbg"
+            ]
+        }
+    ]
+}

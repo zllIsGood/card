@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<e:Skin class="MonsterBaseSkin" width="162" height="223" xmlns:ns1="*" xmlns:e="http://ns.egret.com/eui"
+        xmlns:w="http://ns.egret.com/wing">
+    <e:Group x="0" y="0" width="450" height="618" scaleX="0.36" scaleY="0.36">
+        <e:Image id="img1" x="0" y="0" source="" />
+        <e:Image id="img2" x="0" y="0" source="boder_lvse1_png" />
+    </e:Group>
+    <e:Image x="43" y="14" source="card_boder_di_png" />
+    <e:Image x="15" source="card_boder_xiadi_png" y="181" />
+    <e:Image id="img3" x="-2" y="0" source="lv_iocn_lq1_png" />
+    <e:Image source="card_lv_png" left="2" top="4" />
+    <e:Image x="103" y="154" source="card_hp_png" />
+    <e:Image x="15" y="154" source="card_atk_png" />
+    <e:BitmapLabel id="atkLab" text="9966" font="fight_number_fnt" left="16" bottom="18" />
+    <e:BitmapLabel id="hpLab" text="9966" font="fight_number_fnt" right="15" bottom="18" />
+    <e:BitmapLabel id="lvLab" text="10" font="fight_number_fnt" y="21" horizontalCenter="-62" />
+    <e:Group x="0" y="0" width="450" height="618" scaleX="0.36" scaleY="0.36">
+        <e:Image id="starImg" x="159.97" y="48.11" source="star1_png" scaleX="1.6" scaleY="1.6" />
+    </e:Group>
+</e:Skin>

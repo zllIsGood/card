@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<e:Skin class="HeroGroupSkin" width="750" height="1334" xmlns:ns1="*" xmlns:e="http://ns.egret.com/eui"
+        xmlns:w="http://ns.egret.com/wing">
+    <e:Rect left="0" right="0" top="0" bottom="0" fillAlpha="1"  fillColor="0xF6F1E3"/>
+    <e:Group width="750" horizontalCenter="0" top="100" bottom="100">
+        <e:Scroller width="750" bounces="false" horizontalCenter="0" top="0" bottom="0">
+            <e:Group>
+                <ns1:HeroPosView id="heroPos" skinName="HeroPosSkin" />
+                <e:Group width="694" scaleX="1" scaleY="1">
+                    <e:Image source="ui_rect_png" left="0" right="0" top="0" bottom="0" scale9Grid="23,23,2,2" />
+                    <e:Image x="0" y="28" source="title_frame_png" />
+                    <e:Label text="我的牌库" x="12" y="42" size="28" />
+                    <e:Label id="cLab" text="已收集 0/140" x="478" y="44" size="26" textColor="0xB1A586" />
+                    <e:Group id="grp1" width="660" scaleX="1" scaleY="1" top="116" bottom="52" x="20" />
+                </e:Group>
+                <e:Group width="694" scaleX="1" scaleY="1">
+                    <e:Image source="ui_rect_png" left="0" right="0" top="0" bottom="0" scale9Grid="23,23,2,2" />
+                    <e:Image x="0" y="28" source="title_frame_png" />
+                    <e:Label text="未获得" x="12" y="42" size="28" />
+                    <e:List id="list2" width="660" x="20" itemRendererSkinName="HeroItemSkin" top="116" bottom="22">
+                        <e:layout>
+                            <e:TileLayout horizontalGap="24" verticalGap="-12" />
+                        </e:layout>
+                    </e:List>
+                </e:Group>
+                <e:layout>
+                    <e:VerticalLayout gap="52" horizontalAlign="center" />
+                </e:layout>
+            </e:Group>
+        </e:Scroller>
+    </e:Group>
+</e:Skin>

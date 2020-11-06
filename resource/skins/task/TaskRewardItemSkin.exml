@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<e:Skin class="TaskRewardItemSkin" width="136" height="174" xmlns:ns1="*" xmlns:e="http://ns.egret.com/eui"
+        xmlns:w="http://ns.egret.com/wing">
+    <e:Image id="img1" y="6" source="task_vip_icon_png" horizontalCenter="0" />
+    <e:Image id="img2" source="task_lock_png" right="10" top="0" />
+    <e:Label id="lab1" text="解锁奖励" y="110" size="26" textColor="0x444444" horizontalCenter="0" />
+    <e:Label id="lab2" text="解锁奖励" y="152" size="22" textColor="0xFFA029" horizontalCenter="0" />
+</e:Skin>

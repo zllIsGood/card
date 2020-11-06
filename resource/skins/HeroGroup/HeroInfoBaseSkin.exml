@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<e:Skin class="HeroInfoBaseSkin" width="450" height="618" xmlns:ns1="*" xmlns:e="http://ns.egret.com/eui"
+        xmlns:w="http://ns.egret.com/wing">
+	<e:Image id="img1" x="0" y="0" source="" />
+	<e:Image id="img2" x="0" y="0" source="frame_sheng_mini_png" />
+	<e:BitmapLabel id="atkLab" x="40.87" y="539" font="card_number_fnt" text="9966" />
+	<e:BitmapLabel id="hpLab" y="539" font="card_number_fnt" text="9966" right="43" />
+	<e:BitmapLabel id="lvLab" y="67.78" font="card_number_fnt" text="10" horizontalCenter="-153" />
+</e:Skin>

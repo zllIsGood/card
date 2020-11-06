@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<e:Skin class="FightSkin" width="750" height="1334" xmlns:ns1="*" xmlns:e="http://ns.egret.com/eui"
+        xmlns:w="http://ns.egret.com/wing">
+    <!--<e:Rect left="0" right="0" top="0" bottom="0" fillAlpha="0.7" />
+    -->
+    <e:Group width="750" height="1334" horizontalCenter="0" verticalCenter="0" touchEnabled="false">
+			<ns1:BaseBtn skinName="BaseBtnSkin" icon="fight_rate2_png" bottom="24" left="65" id="xImg"/>
+			<ns1:BaseBtn x="490" y="1095" skinName="BaseBtnSkin" icon="fight_break_png" bottom="24" right="65"  id="breakImg"/>
+    </e:Group>
+</e:Skin>

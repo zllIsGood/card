@@ -1,0 +1,21 @@
+<?xml version='1.0' encoding='utf-8'?>
+<e:Skin class="TreasureBoxItemSkin"
+	 width="750"
+	height="1334" xmlns:e="http://ns.egret.com/eui" xmlns:ns1="*">
+	<e:Rect fillAlpha="0.5" left="0" right="0" top="0" bottom="0"/>
+
+    <e:Group id="group_boxhide"  scaleY="1" bottom="0" left="0" right="0" top="0">
+		<e:Rect width="750" height="818" ellipseWidth="158" ellipseHeight="0" fillColor="0xF6F1E3" scaleX="1" scaleY="1" bottom="-50"/>
+		<e:Image source="boxtitle_png" left="61" bottom="768"/>
+		<ns1:BaseBtn id="btn_close" icon="close_icon_png" right="70" skinName="BaseBtnSkin" bottom="768"/>
+		<e:Group width="750" height="768" id="reward" horizontalCenter="0" bottom="0">
+			<e:List id="list" horizontalCenter="0" verticalCenter="0">
+				<e:layout>
+					<e:TileLayout orientation="rows" horizontalGap="25" verticalGap="50" paddingLeft="32" paddingTop="63" horizontalAlign="center" verticalAlign="middle"/>
+				</e:layout>
+			</e:List>
+			
+		</e:Group>
+		<e:Label text="我的宝箱" textColor="0x925B0B" bold="true" size="35" anchorOffsetX="85" width="169" textAlign="center" bottom="780" left="130" anchorOffsetY="18"/>
+	</e:Group>
+</e:Skin>

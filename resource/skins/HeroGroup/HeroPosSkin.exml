@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<e:Skin class="HeroPosSkin" width="750" height="890" xmlns:ns1="*" xmlns:e="http://ns.egret.com/eui"
+        xmlns:w="http://ns.egret.com/wing">
+    <e:Image y="0" source="hero_pos_bg_png" x="0" />
+    <e:Group id="grp" x="48" y="124" width="660"></e:Group>
+    <ns1:BaseBtn id="btn" icon="formation_go_btn_png" skinName="BaseBtnSkin" x="600" label="布阵"  labelColor="0x4C3719" y="20"/>
+</e:Skin>

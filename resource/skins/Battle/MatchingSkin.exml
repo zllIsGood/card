@@ -1,0 +1,13 @@
+<?xml version='1.0' encoding='utf-8'?>
+<e:Skin class="MatchingSkin"
+	 width="750"
+	height="1334" xmlns:e="http://ns.egret.com/eui" xmlns:ns1="*">
+	<e:Rect left="0" right="0" top="0" bottom="0"/>
+	<e:Image horizontalCenter="0" top="200" source="matchLogo_png"/>
+    <ns1:BaseBtn id="btn_cancel" label="取消匹配" scaleX="1" scaleY="1" icon="exchangeCard_bg_png" skinName="BaseBtnSkin" horizontalCenter="0" bottom="324" labelColor="0x4C3719"/>
+	<ns1:BaseBtn id="btn_rematch" label="重新匹配" scaleX="1" scaleY="1" icon="exchangeCard_bg_png" skinName="BaseBtnSkin" horizontalCenter="0" bottom="450" labelColor="0x4C3719" x="172" y="932" visible="false"/>
+	<e:Image source="headlogo_png" horizontalCenter="0" top="67"/>
+	<e:Label id="labSecond" text="预计等待 10 秒 " y="509" textColor="0xFFFABD" bold="true" horizontalCenter="0"/>
+	<e:Label id="lab_matchstate" text="匹配中" y="409" bold="true" size="50" horizontalCenter="0" visible="true"/>
+	<e:Image width="250" height="250" horizontalCenter="0" top="96" id="img_head"/>
+</e:Skin>

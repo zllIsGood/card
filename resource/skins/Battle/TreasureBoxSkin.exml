@@ -1,0 +1,9 @@
+<?xml version='1.0' encoding='utf-8'?>
+<e:Skin class="TreasureBoxSkin"
+	 xmlns:e="http://ns.egret.com/eui" width="212" height="296">
+	<e:Group width="212" height="296" >
+		<e:Image id="img_bgsource"/>
+		<e:Label id="tex_timestamp" bold="true" size="25" horizontalCenter="0" textColor="0xFFAB00" top="80" wordWrap="true" anchorOffsetY="0" height="39"/>
+		<e:Image id="img_boxsource"  scaleX="1" scaleY="1" width="172" height="172" horizontalCenter="0" bottom="14" />
+	</e:Group>
+</e:Skin>   

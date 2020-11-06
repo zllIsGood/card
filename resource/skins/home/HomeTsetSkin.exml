@@ -1,0 +1,10 @@
+<?xml version='1.0' encoding='utf-8'?>
+<e:Skin class="HomeTsetSkin" width="750" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing"
+        xmlns:euiextension="euiextension.*" xmlns:ns1="*" height="1334">
+    <ns1:BaseBtn id="fightBtn" label="" icon="title_frame_png" right="-7" bottom="390" skinName="BaseBtnSkin" />
+    <ns1:BaseBtn id="stratBtn" label="开始战斗" icon="title_frame_png" right="-7" bottom="490" skinName="BaseBtnSkin" />
+    <ns1:BaseBtn id="inBtn" label="战斗人物输入" icon="title_frame_png" skinName="BaseBtnSkin" right="-7" bottom="590" />
+    <e:EditableText id="editTxt" width="476" height="100" text="1_2_3_4_5_6_7_8_9_10_11_12" x="80" anchorOffsetX="0"
+                    prompt="请输入要战斗的人物id" verticalCenter="111" textColor="0x095df4" />
+</e:Skin>
+

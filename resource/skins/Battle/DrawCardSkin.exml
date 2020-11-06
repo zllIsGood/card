@@ -1,0 +1,8 @@
+<?xml version='1.0' encoding='utf-8'?>
+<e:Skin class="DrawCardSkin"
+	 width="160"
+	height="280" xmlns:e="http://ns.egret.com/eui" xmlns:ns1="*">
+	<e:Image id="img_card" width="160" height="224" source="cardback_png" anchorOffsetX="80" anchorOffsetY="112" horizontalCenter="0" top="0"/>
+	<ns1:HeroInfoBase visible="false" id="hero" scaleX="0.36" scaleY="0.36" skinName="HeroInfoBaseSkin"/>
+	<e:Label id="lab_count" text="x1" bottom="0" bold="true" horizontalCenter="0"/>
+</e:Skin>

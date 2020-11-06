@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<e:Skin class="HeroInfoItemSkin" width="694" height="180" xmlns:ns1="*" xmlns:e="http://ns.egret.com/eui"
+        xmlns:w="http://ns.egret.com/wing">
+    <e:Image x="0" y="0" source="tab_skill_png" />
+    <e:Image id="img" x="82" source="skill_icon1_png" verticalCenter="0" />
+    <e:Image id="img2" source="lock_icon_png" right="0" top="0" />
+    <e:Label id="lab0" text="基础天赋" size="26" x="162" textColor="0x925B0B" bold="true" y="38" />
+    <e:Label id="lab1" text="对无护甲单位（森林、地狱、王国）造成的伤4545" size="24" x="162" textColor="0xB1A586" y="82" lineSpacing="12"
+             width="480" />
+    <e:Label id="lab2" text="青铜段位可释放" size="20" textColor="0x764C10" y="18" horizontalCenter="249" />
+    <e:Rect id="rec" left="0" right="0" top="0" bottom="0" ellipseWidth="20" ellipseHeight="20" fillAlpha="0.35"
+            fillColor="0xA6988A" />
+</e:Skin>

@@ -1,0 +1,14 @@
+<?xml version='1.0' encoding='utf-8'?>
+<e:Skin class="BattleInfoSkin"
+ xmlns:e="http://ns.egret.com/eui">
+
+    <e:Group x="0" y="0">
+		<e:Image id="imghead" width="200" height="200" scaleX="1" scaleY="1" mask="{this.rectbg}" top="0" left="0" source="{data.source}"/>
+		<e:Rect id="rectbg" width="130" height="130" fillColor="0xFDEF63" strokeWeight="5" ellipseWidth="150" scaleX="1.5" scaleY="1.5" ellipseHeight="0" strokeAlpha="1" blendMode="normal" fillAlpha="1" strokeColor="0xFFFF00" top="0" left="0"/>
+			<e:Label text="{data.name}" left="0" top="260"/>
+			<e:Label text="荣誉值" left="0" top="329" textColor="0x80FFFF" alpha="0.4"/>
+			<e:Label text="胜率" left="0" top="383" textColor="0x80FFFF" alpha="0.4" x="10" y="339"/>
+			<e:Label text="{data.honor}" top="329" size="30" left="110"/>
+			<e:Label text="{data.winrate}" top="383" left="110"/>
+	</e:Group>
+</e:Skin>

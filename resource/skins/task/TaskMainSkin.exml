@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<e:Skin class="TaskMainSkin" width="750" height="1334" xmlns:ns1="*" xmlns:e="http://ns.egret.com/eui"
+        xmlns:w="http://ns.egret.com/wing">
+    <e:Rect left="0" right="0" top="0" bottom="0" fillAlpha="1" fillColor="0xffffff" />
+    <e:Group horizontalCenter="0" width="750" height="1334" verticalCenter="0">
+        <e:Image y="0" x="0" source="task_main_bg_png" />
+        <e:Group x="158" y="168">
+            <e:Image id="zoomImg" y="-6" x="92" source="bronze_2_icon_png" />
+            <e:Label text="小天天" x="0" y="0" size="28" />
+            <e:Label id="honorLab" text="荣誉值 0" x="0" y="38" size="20" />
+        </e:Group>
+        <e:Image id="goImg" y="254" source="task_big1_bg_png" horizontalCenter="0" />
+        <e:Image y="598" x="206" source="task_honer_png" />
+        <e:Group id="starGrp" x="314" y="560">
+            <e:Image source="task_star1_png" />
+            <e:Image source="task_star1_png" x="44" y="6" />
+            <e:Image source="task_star1_png" x="88" y="0" />
+        </e:Group>
+        <ns1:BaseBtn id="btn" icon="task_question_png" skinName="BaseBtnSkin" y="54" x="534" />
+        <e:Label text="成长规则" x="594" y="68" size="32" />
+        <e:Group y="676" horizontalCenter="0" width="734" height="364">
+            <e:Image source="task_main_rectbg_png" />
+            <e:Label text="解锁奖励" x="48" y="60" size="28" textColor="0x444444" />
+            <e:Label text="右滑查看更多" x="542" y="62" size="24" textColor="0xD0D0D0" />
+            <e:Scroller width="664" x="30" y="126">
+                <e:List id="list" itemRendererSkinName="TaskRewardItemSkin">
+                    <e:ArrayCollection>
+                        <e:Array>
+                            <e:Object/>
+                            <e:Object/>
+                            <e:Object/>
+                            <e:Object/>
+                            <e:Object/>
+                        </e:Array>
+                    </e:ArrayCollection>
+                    <e:layout>
+                        <e:HorizontalLayout gap="40" />
+                    </e:layout>
+                </e:List>
+            </e:Scroller>
+        </e:Group>
+    </e:Group>
+</e:Skin>

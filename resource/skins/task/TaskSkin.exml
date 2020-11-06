@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<e:Skin class="TaskSkin" width="750" height="1334" xmlns:ns1="*" xmlns:e="http://ns.egret.com/eui"
+        xmlns:w="http://ns.egret.com/wing">
+    <e:Group width="750" horizontalCenter="0" top="0" bottom="0">
+        <e:Image source="task_bg_png" x="0" verticalCenter="0" />
+        <e:Scroller width="750" x="0" top="0" bottom="0" bounces="false">
+            <e:Group y="0" width="750" x="0">
+                <e:Group id="grp" y="0" width="750" x="0">
+                    <e:Rect fillAlpha="0.2" fillColor="0x000000" width="56" x="0" top="0" bottom="0" y="0" />
+                    <e:Image id="honorBar" x="12" source="task_honer_bar_png" y="200" height="600"
+                             scale9Grid="15,16,7,4" scaleX="1" scaleY="1" />
+                    <e:Group id="lineGrp" width="56" x="0" top="0" bottom="0" y="0" scaleX="1" scaleY="1">
+                        <e:Image y="190" scale9Grid="15,16,7,4" source="task_honer_line_png" x="0" />
+                        <e:Image y="300" scale9Grid="15,16,7,4" source="task_honer_line_png" x="0" />
+                    </e:Group>
+                    <e:Group id="zoomGrp" width="56" x="0" top="0" bottom="0" y="0" scaleX="1" scaleY="1">
+                        <e:Image x="0" y="342" scale9Grid="15,16,7,4" source="task_zoom_light_png" />
+                    </e:Group>
+                </e:Group>
+            </e:Group>
+        </e:Scroller>
+    </e:Group>
+    <e:Rect left="0" right="0" bottom="0" fillAlpha="1" height="128" fillColor="0x86D2E1" />
+    <ns1:BaseBtn id="retBtn" icon="task_close_btn_png" skinName="BaseBtnSkin" label="关闭" labelColor="0x244856"
+                 horizontalCenter="0" x="275" bottom="26" />
+</e:Skin>

@@ -1,0 +1,15 @@
+<?xml version='1.0' encoding='utf-8'?>
+<e:Skin class="HomeSkin" width="750" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing"
+        xmlns:euiextension="euiextension.*" xmlns:ns1="*" height="1334">
+    <!--<e:Image id="bg" scale9Grid="93,1314,564,20" horizontalCenter="0" verticalCenter="0" source="" visible="false" />
+    -->
+    <e:Group bottom="0" left="0" right="0">
+        <e:Rect left="0" right="0" top="0" bottom="0" fillAlpha="1" fillColor="0xF6F1E3" />
+        <ns1:BaseBtn id="taskBtn" label="成长线" icon="title_frame_png" skinName="BaseBtnSkin" x="0" />
+        <ns1:BaseBtn id="cardBtn" label="卡牌" icon="title_frame_png" skinName="BaseBtnSkin" x="183.33333333333334" />
+        <ns1:BaseBtn id="battleBtn" label="部落战" icon="title_frame_png" skinName="BaseBtnSkin" y="0"
+                     x="366.6666666666667" />
+        <ns1:BaseBtn id="testBtn" label="打开测试面板" icon="title_frame_png" skinName="BaseBtnSkin" y="0" x="550" />
+    </e:Group>
+</e:Skin>
+

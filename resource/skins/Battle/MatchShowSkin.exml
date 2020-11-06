@@ -1,0 +1,9 @@
+<?xml version='1.0' encoding='utf-8'?>
+<e:Skin class="MatchShowSkin"
+	 width="750"
+	height="1334" xmlns:e="http://ns.egret.com/eui" xmlns:ns1="*">
+	<e:Rect left="0" right="0" top="0" bottom="0"/>
+	<ns1:BattleInfo id="userinfo" anchorOffsetX="0" width="200" anchorOffsetY="0" height="200" left="60" verticalCenter="0"/>
+	<ns1:BattleInfo id="matchinfo" anchorOffsetX="0" width="200" anchorOffsetY="0" height="200" right="60" verticalCenter="0"/>
+	<e:Image source="VS_png" horizontalCenter="0" verticalCenter="0"/>
+</e:Skin>

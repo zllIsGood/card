@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<e:Skin class="HeroItemSkin" width="200" height="320" currentState="normal" xmlns:ns1="*"
+        xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing" states="normal,remove,use">
+    <e:Image source="hero_select_png" x="-20" y="-20" visible.normal="false" />
+    <e:Rect id="rectBg" fillAlpha="1" fillColor="0xE6E0D0" ellipseWidth="16" ellipseHeight="16" width="176" height="56"
+            y="264" horizontalCenter="0" />
+    <ns1:HeroBase id="heroBase" skinName="HeroBaseSkin" scaleX="0.47" scaleY="0.47" y="-3" x="-6" />
+    <e:Label id="lvLab" text="2级" y="248" size="20" horizontalCenter="0" />
+    <e:Group id="barGrp" x="8" y="277">
+        <e:ProgressBar id="bar" y="7" skinName="ProgressBar3Skin" value="0" x="22" />
+        <e:Image x="0" y="0" source="upgrade_icon_png" />
+    </e:Group>
+    <e:Image id="starImg" x="75" y="15" source="star1_png" scaleX="0.71" scaleY="0.71" />
+    <ns1:BaseBtn id="infoBtn" skinName="BaseBtnSkin" icon="hero_info_btn_png" y="276" x="0" label="信息"
+                 labelColor="0x4C3719" visible.normal="false" />
+    <ns1:BaseBtn id="removeBtn" skinName="BaseBtnSkin" icon="hero_remove_bg_png" y="354" x="0" label="移除"
+                 visible.normal="false" visible.use="false" />
+    <ns1:BaseBtn id="useBtn" skinName="BaseBtnSkin" icon="hero_use_bg_png" y="354" x="0" label="使用"
+                 labelColor="0x4C3719" visible.normal="false" visible.remove="false" />
+</e:Skin>

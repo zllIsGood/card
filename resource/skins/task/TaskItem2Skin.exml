@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<e:Skin class="TaskItem2Skin" width="512" height="776" xmlns:ns1="*" xmlns:e="http://ns.egret.com/eui"
+        xmlns:w="http://ns.egret.com/wing">
+    <e:Image id="img1" y="0" source="task_big1_bg_png" horizontalCenter="0" />
+    <e:Group id="starGrp" x="195" y="306">
+        <e:Image source="task_star1_png" />
+        <e:Image source="task_star1_png" x="44" y="6" />
+        <e:Image source="task_star1_png" x="88" y="0" />
+    </e:Group>
+    <e:Group id="grp" x="0" y="448" width="512" height="104">
+        <e:Image source="task_big_labbar_png" x="0" />
+        <e:Image id="img2" source="bronze_2_lab_png" x="70" y="26" />
+        <e:Image x="242" y="22" source="task_honer_png" />
+        <e:Label id="lab1" text="54645654" y="30" size="24" textColor="0x244856" x="292" />
+    </e:Group>
+    <e:Label id="lab2" text="解锁奖励" y="570" size="20" textColor="0x6FDDFD" horizontalCenter="0" />
+    <e:Scroller width="512" x="0" y="602">
+        <e:List id="list" itemRendererSkinName="TaskRewardItemSkin">
+            <e:ArrayCollection>
+                <e:Array>
+                    <e:Object/>
+                    <e:Object/>
+                    <e:Object/>
+                    <e:Object/>
+                    <e:Object/>
+                </e:Array>
+            </e:ArrayCollection>
+            <e:layout>
+                <e:HorizontalLayout gap="40" />
+            </e:layout>
+        </e:List>
+    </e:Scroller>
+    <ns1:BaseBtn id="btn" icon="task_get_btn_png" skinName="BaseBtnSkin" label="领取" labelColor="0x4C3719" y="780"
+                 horizontalCenter="0" />
+</e:Skin>

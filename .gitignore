@@ -1,0 +1,23 @@
+
+.idea/
+.vscode/
+
+libs/modules/
+libs/exml.e.d.ts
+audio/
+fonts/
+images/
+spine/
+
+bin-debug/
+
+.wing/
+
+bin-release/
+
+.DS_Store
+
+manifest.json
+other/node_modules/
+/other/~$卡牌游戏规划.xlsx
+/other/~$卡牌游戏规划 (1).xlsx

@@ -1,0 +1,114 @@
+{
+    "enemy": [
+        {
+            "id": 1,
+            "name": "人马巡逻者1",
+            "attackID": 244,
+            "skill1": null,
+            "skill2": 154,
+            "skill3": null,
+            "atkPro": 0,
+            "lifePro": 0,
+            "attack": 95,
+            "life": 120,
+            "lv": 10
+        },
+        null,
+        null,
+        {
+            "id": 2,
+            "name": "人马巡逻者2",
+            "attackID": 244,
+            "skill1": 205,
+            "skill2": 154,
+            "skill3": 203,
+            "atkPro": 17,
+            "lifePro": 11,
+            "attack": 95,
+            "life": 310,
+            "lv": 10
+        },
+        {
+            "id": 3,
+            "name": "人马巡逻者3",
+            "attackID": 244,
+            "skill1": 203,
+            "skill2": 85,
+            "skill3": 194,
+            "atkPro": 17,
+            "lifePro": 11,
+            "attack": 155,
+            "life": 310,
+            "lv": 1
+        },
+        {
+            "id": 4,
+            "name": "人马巡逻者4",
+            "attackID": 244,
+            "skill1": 203,
+            "skill2": 154,
+            "skill3": 194,
+            "atkPro": 17,
+            "lifePro": 11,
+            "attack": 122,
+            "life": 310,
+            "lv": 1
+        }
+    ],
+    "our": [
+        {
+            "id": 5,
+            "name": "人马巡逻者5",
+            "attackID": 245,
+            "skill1": 69,
+            "skill2": null,
+            "skill3": null,
+            "atkPro": 0,
+            "lifePro": 0,
+            "attack": 90,
+            "life": 310,
+            "lv": 5
+        },
+        null,
+        null,
+        {
+            "id": 6,
+            "name": "人马巡逻者6",
+            "attackID": 245,
+            "skill1": 185,
+            "skill2": 69,
+            "skill3": 85,
+            "atkPro": 17,
+            "lifePro": 11,
+            "attack": 95,
+            "life": 310,
+            "lv": 10
+        },
+        {
+            "id": 7,
+            "name": "人马巡逻者7",
+            "attackID": 244,
+            "skill1": null,
+            "skill2": 185,
+            "skill3": 194,
+            "atkPro": 17,
+            "lifePro": 11,
+            "attack": 95,
+            "life": 310,
+            "lv": 1
+        },
+        {
+            "id": 8,
+            "name": "人马巡逻者8",
+            "attackID": 244,
+            "skill1": 185,
+            "skill2": 85,
+            "skill3": 194,
+            "atkPro": 17,
+            "lifePro": 11,
+            "attack": 95,
+            "life": 310,
+            "lv": 1
+        }
+    ]
+}

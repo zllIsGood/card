@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<e:Skin class="TaskItem1Skin" width="536" height="252" xmlns:ns1="*" xmlns:e="http://ns.egret.com/eui"
+        xmlns:w="http://ns.egret.com/wing">
+    <e:Image id="img1" source="task_bar1_bg_png" x="1" />
+    <e:Image id="img2" source="task_gold_png" x="366" y="75" />
+    <e:Group id="starGrp" x="10" y="157">
+        <e:Image source="task_star_bg_png" scale9Grid="34,11,204,5" width="220"  height="44"/>
+        <e:Image source="task_star1_png" y="5"  x="8"/>
+        <e:Image source="task_star1_png" x="50.25" y="5" />
+			<e:Image source="task_star1_png" x="92.5" y="5"/>
+			<e:Image source="task_star1_png" x="134.75" y="5"/>
+        <e:Image x="177" y="5" source="task_star2_png" />
+    </e:Group>
+    <ns1:BaseBtn id="btn" icon="task_get_btn_png" skinName="BaseBtnSkin" label="收集" labelColor="0x4C3719" x="304"
+                 y="184" />
+</e:Skin>
