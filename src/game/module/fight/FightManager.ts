@@ -588,17 +588,22 @@ class FightManager extends BaseClass {
             }
             FightManager.ins().charMonsters[this.curData.atker.pos].showAction(MonsterActionType.atk_ad)
             await TimerManager.ins().deleyPromisse(150)
+            this.showAct()
             let cfg1 = GlobalConfig.getSkillCfg(this.curData.skillId)
             let cfg = GlobalConfig.getSkillCfg(cfg1.value)
             let mc = SkillTypeBase.getMC(cfg1.value)
-            ParticleController.ins().playParticle("huose", this.mapView._effTopLayer, -1, this.curData.atker.pos, this.curData.atked, this.rate)
-            await TimerManager.ins().deleyPromisse(700 / this.rate)
-            this.showAct()
-            for (let item of this.curData.atked) {
-                SkillManager.ins().playSkillEff(item.pos, mc, this.rate)
+            if (cfg.type == 1013) {
+                //死契甘霖
             }
-            let skillms = SkillTypeBase.getSkillTime(mc) - 600
-            await TimerManager.ins().deleyPromisse(skillms / this.rate)
+            else {
+                ParticleController.ins().playParticle("huose", this.mapView._effTopLayer, -1, this.curData.atker.pos, this.curData.atked, this.rate)
+                await TimerManager.ins().deleyPromisse(700 / this.rate)
+                for (let item of this.curData.atked) {
+                    SkillManager.ins().playSkillEff(item.pos, mc, this.rate)
+                }
+                let skillms = SkillTypeBase.getSkillTime(mc) - 600
+                await TimerManager.ins().deleyPromisse(skillms / this.rate)
+            }
             for (let item of this.curData.atked) {
                 this.playData(item)
             }
@@ -795,6 +800,7 @@ class FightManager extends BaseClass {
             }
         }
         else if (this.curData.isDieContract) {
+            await TimerManager.ins().deleyPromisse(700 / this.rate)
             for (let item of this.curData.atked) {
                 if (item.computeData.harmHp > 0) {
                     FightManager.ins().charMonsters[item.pos].showAction(MonsterActionType.attacked)
