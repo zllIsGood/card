@@ -1,0 +1,27 @@
+<?xml version='1.0' encoding='utf-8'?>
+<e:Skin class="SubJectItemSkin" width="729" height="234" xmlns:e="http://ns.egret.com/eui" xmlns:ns1="*"
+        xmlns:w="http://ns.egret.com/wing">
+	<e:Image id="subjectBg" source="boder_datik_png" />
+	<e:Group id="allGrp" width="729" height="234">
+		<e:Label id="lbTitle" text="以下谁是混元形意太极拳宗师" textColor="0xB7542D" bold="true" top="85" width="570" textAlign="left"
+		         height="60" wordWrap="true" size="25" x="70" />
+		<e:Group id="groupLabel" top="148" horizontalCenter="0">
+			<ns1:BaseBtn id="btnA" label="A-天线宝宝" labelColor="0xb7542d" icon="selectbtn_png" skinName="BaseBtn5Skin" />
+			<ns1:BaseBtn id="btnB" label="B-马宝国噢" labelColor="0xb7542d" icon="selectbtn_png" skinName="BaseBtn5Skin" />
+			<e:layout>
+				<e:HorizontalLayout gap="100" />
+			</e:layout>
+		</e:Group>
+		<e:Group id="groupImg" horizontalCenter="0" top="125" visible="false">
+			<ns1:BaseBtn id="imgA" skinName="BaseBtnSkin" icon="aws3_png" scaleX="0.3" scaleY="0.3" />
+			<ns1:BaseBtn id="imgB" icon="aws4_png" scaleX="0.3" scaleY="0.3" skinName="BaseBtnSkin" />
+			<e:layout>
+				<e:HorizontalLayout gap="80" />
+			</e:layout>
+		</e:Group>
+		<e:Image id="imgLogo" source="cuohao_png" visible="false" />
+		<e:Image source="icon_shizhong_png" right="19" top="76" scaleX="0.7" scaleY="0.8" />
+		<e:BitmapLabel id="lbCountDown" right="42" font="countdown_fnt" text="9" top="98" scaleX="1.5" scaleY="1.5" />
+
+	</e:Group>
+</e:Skin>

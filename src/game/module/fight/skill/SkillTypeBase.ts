@@ -2,13 +2,13 @@
  * @Author: zhoulanglang 
  * @Date: 2020-09-17 17:18:11 
  * @Last Modified by: zhoulanglang
- * @Last Modified time: 2020-11-02 12:12:43
+ * @Last Modified time: 2020-11-24 12:22:44
  */
 class SkillTypeBase {
     public skilltype: number
 
     /**攻击*/
-    public attack(skill, entity: NewMonsterEntity): { atker: NewMonsterEntity, atked: NewMonsterEntity[] } {
+    public attack(skill, entity: NewMonsterEntity, pos: number = null): { atker: NewMonsterEntity, atked: NewMonsterEntity[] } {
         return null
     }
 

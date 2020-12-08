@@ -2,24 +2,24 @@
  * @Author: zhoulanglang 
  * @Date: 2020-09-09 14:51:40 
  * @Last Modified by: zhoulanglang
- * @Last Modified time: 2020-11-02 17:15:04
+ * @Last Modified time: 2020-11-28 18:07:18
  */
 class FightData {
 
     /**站位坐标*/
     public static points = [
-        { x: 159, y: 806 }, //1
-        { x: 375, y: 806 },
-        { x: 591, y: 806 },
-        { x: 159, y: 1074 },
-        { x: 375, y: 1074 },
-        { x: 591, y: 1074 },
-        { x: 159, y: 162 }, //7
-        { x: 375, y: 162 },
-        { x: 591, y: 162 },
-        { x: 159, y: 430 },
-        { x: 375, y: 430 },
-        { x: 591, y: 430 },
+        { x: 159, y: 724 }, //1
+        { x: 375, y: 724 },
+        { x: 591, y: 724 },
+        { x: 159, y: 974 },
+        { x: 375, y: 974 },
+        { x: 591, y: 974 },
+        { x: 159, y: 170 }, //7
+        { x: 375, y: 170 },
+        { x: 591, y: 170 },
+        { x: 159, y: 420 },
+        { x: 375, y: 420 },
+        { x: 591, y: 420 },
     ]
 
     public static skillNameIcon = {
@@ -55,7 +55,10 @@ class FightData {
     }
 
     public static getSkillName(skillId) {
-        if (skillId >= 41 && skillId <= 48) { //霜冻
+        if (skillId >= 29 && skillId <= 36) { //连环闪电
+            return 'skill_lhsd'
+        }
+        else if (skillId >= 41 && skillId <= 48) { //霜冻
             return 'skill_sd'
         }
         else if (skillId >= 53 && skillId <= 60) { //火墙

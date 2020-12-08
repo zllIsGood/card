@@ -1,8 +1,8 @@
 /* 粒子系统控制器
  * @Author: zhoulanglang 
  * @Date: 2020-10-29 12:19:19 
- * @Last Modified by:   zhoulanglang 
- * @Last Modified time: 2020-10-29 12:19:19 
+ * @Last Modified by: zhoulanglang
+ * @Last Modified time: 2020-11-28 18:27:43
  */
 class ParticleController extends BaseClass {
 
@@ -40,6 +40,12 @@ class ParticleController extends BaseClass {
 				atkeds = [{ pos: 7 }, { pos: 8 }, { pos: 9 }]
 			}
 			let atkpoints = FightData.points[atker]
+			if (atker == -1) {
+				atkpoints = { x: 750 - 60, y: 1334 - 60 }
+			}
+			else if (atker == -2) {
+				atkpoints = { x: 60, y: 60 }
+			}
 			par.emitterX = atkpoints.x, par.emitterY = atkpoints.y
 			if (atkeds == null || atkeds.length == 0) atkeds = [{ pos: atker }]//处理给自己回血
 			for (let i = 0; i < atkeds.length; i++) {

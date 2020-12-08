@@ -1,0 +1,704 @@
+{
+    "frameRate": 30,
+    "isGlobal": 0,
+    "armature": [
+        {
+            "defaultActions": [
+                {
+                    "gotoAndPlay": "damageup_buff"
+                }
+            ],
+            "bone": [
+                {
+                    "name": "root",
+                    "transform": {}
+                },
+                {
+                    "length": 55,
+                    "transform": {
+                        "y": 165.09,
+                        "skX": -90,
+                        "skY": -90
+                    },
+                    "parent": "root",
+                    "name": "bfd"
+                },
+                {
+                    "length": 60,
+                    "transform": {
+                        "y": 29.63,
+                        "skX": -90,
+                        "skY": -90
+                    },
+                    "parent": "root",
+                    "name": "gc"
+                },
+                {
+                    "length": 52,
+                    "transform": {
+                        "y": 42.33,
+                        "skX": -90,
+                        "skY": -90
+                    },
+                    "parent": "root",
+                    "name": "gd"
+                }
+            ],
+            "type": "Armature",
+            "frameRate": 30,
+            "animation": [
+                {
+                    "bone": [
+                        {
+                            "rotateFrame": [
+                                {
+                                    "tweenEasing": 0,
+                                    "duration": 4
+                                },
+                                {
+                                    "tweenEasing": 0,
+                                    "duration": 5
+                                },
+                                {
+                                    "duration": 15
+                                }
+                            ],
+                            "scaleFrame": [
+                                {
+                                    "y": 0.6,
+                                    "tweenEasing": 0,
+                                    "duration": 4
+                                },
+                                {
+                                    "y": 0.8,
+                                    "tweenEasing": 0,
+                                    "duration": 5,
+                                    "x": 2.6
+                                },
+                                {
+                                    "duration": 15,
+                                    "x": 2.8
+                                }
+                            ],
+                            "name": "gd",
+                            "translateFrame": [
+                                {
+                                    "y": 37.06,
+                                    "tweenEasing": 0,
+                                    "duration": 4
+                                },
+                                {
+                                    "y": 37.06,
+                                    "tweenEasing": 0,
+                                    "duration": 5
+                                },
+                                {
+                                    "y": 37.06,
+                                    "duration": 15
+                                }
+                            ]
+                        },
+                        {
+                            "rotateFrame": [
+                                {
+                                    "tweenEasing": 0,
+                                    "duration": 2
+                                },
+                                {
+                                    "tweenEasing": 0,
+                                    "duration": 6
+                                },
+                                {
+                                    "tweenEasing": 0,
+                                    "duration": 7
+                                },
+                                {
+                                    "tweenEasing": 0,
+                                    "duration": 8
+                                },
+                                {
+                                    "duration": 1
+                                }
+                            ],
+                            "scaleFrame": [
+                                {
+                                    "tweenEasing": 0,
+                                    "duration": 2
+                                },
+                                {
+                                    "y": 0.8,
+                                    "tweenEasing": 0,
+                                    "duration": 6,
+                                    "x": 0.3
+                                },
+                                {
+                                    "y": 0.8,
+                                    "tweenEasing": 0,
+                                    "duration": 7,
+                                    "x": 1.2
+                                },
+                                {
+                                    "tweenEasing": 0,
+                                    "duration": 8,
+                                    "x": 1.2
+                                },
+                                {
+                                    "y": 1.2,
+                                    "duration": 1,
+                                    "x": 1.26
+                                }
+                            ],
+                            "name": "gc",
+                            "translateFrame": [
+                                {
+                                    "tweenEasing": 0,
+                                    "duration": 2
+                                },
+                                {
+                                    "y": 20.21,
+                                    "tweenEasing": 0,
+                                    "duration": 6
+                                },
+                                {
+                                    "y": 17.97,
+                                    "tweenEasing": 0,
+                                    "duration": 7
+                                },
+                                {
+                                    "y": 17.97,
+                                    "tweenEasing": 0,
+                                    "duration": 8
+                                },
+                                {
+                                    "y": 17.97,
+                                    "duration": 1
+                                }
+                            ]
+                        },
+                        {
+                            "rotateFrame": [
+                                {
+                                    "tweenEasing": 0,
+                                    "duration": 2
+                                },
+                                {
+                                    "tweenEasing": 0,
+                                    "duration": 22
+                                },
+                                {
+                                    "duration": 0
+                                }
+                            ],
+                            "scaleFrame": [
+                                {
+                                    "tweenEasing": 0,
+                                    "duration": 2
+                                },
+                                {
+                                    "y": 0.4,
+                                    "tweenEasing": 0,
+                                    "duration": 22,
+                                    "x": 0.598
+                                },
+                                {
+                                    "y": 0.56,
+                                    "duration": 0,
+                                    "x": 0.68
+                                }
+                            ],
+                            "name": "bfd",
+                            "translateFrame": [
+                                {
+                                    "tweenEasing": 0,
+                                    "duration": 2
+                                },
+                                {
+                                    "y": -93.22,
+                                    "tweenEasing": 0,
+                                    "duration": 22
+                                },
+                                {
+                                    "y": -93.22,
+                                    "duration": 0
+                                }
+                            ]
+                        },
+                        {
+                            "rotateFrame": [],
+                            "scaleFrame": [],
+                            "name": "root",
+                            "translateFrame": []
+                        }
+                    ],
+                    "slot": [
+                        {
+                            "colorFrame": [
+                                {
+                                    "tweenEasing": 0,
+                                    "duration": 2
+                                },
+                                {
+                                    "tweenEasing": 0,
+                                    "color": {
+                                        "aM": 0
+                                    },
+                                    "duration": 2
+                                },
+                                {
+                                    "tweenEasing": 0,
+                                    "duration": 2
+                                },
+                                {
+                                    "tweenEasing": 0,
+                                    "duration": 2
+                                },
+                                {
+                                    "tweenEasing": 0,
+                                    "duration": 2
+                                },
+                                {
+                                    "tweenEasing": 0,
+                                    "duration": 2
+                                },
+                                {
+                                    "tweenEasing": 0,
+                                    "duration": 2
+                                },
+                                {
+                                    "tweenEasing": 0,
+                                    "duration": 2
+                                },
+                                {
+                                    "tweenEasing": 0,
+                                    "duration": 2
+                                },
+                                {
+                                    "tweenEasing": 0,
+                                    "duration": 2
+                                },
+                                {
+                                    "tweenEasing": 0,
+                                    "duration": 2
+                                },
+                                {
+                                    "tweenEasing": 0,
+                                    "duration": 2
+                                },
+                                {
+                                    "duration": 0
+                                }
+                            ],
+                            "displayFrame": [
+                                {
+                                    "value": -1,
+                                    "duration": 2
+                                },
+                                {
+                                    "duration": 2
+                                },
+                                {
+                                    "value": 1,
+                                    "duration": 2
+                                },
+                                {
+                                    "value": 2,
+                                    "duration": 2
+                                },
+                                {
+                                    "value": 3,
+                                    "duration": 2
+                                },
+                                {
+                                    "value": 4,
+                                    "duration": 2
+                                },
+                                {
+                                    "value": 5,
+                                    "duration": 2
+                                },
+                                {
+                                    "value": 6,
+                                    "duration": 2
+                                },
+                                {
+                                    "value": 7,
+                                    "duration": 2
+                                },
+                                {
+                                    "value": 8,
+                                    "duration": 2
+                                },
+                                {
+                                    "value": 9,
+                                    "duration": 2
+                                },
+                                {
+                                    "value": 10,
+                                    "duration": 2
+                                },
+                                {
+                                    "value": -1,
+                                    "duration": 0
+                                }
+                            ],
+                            "name": "images/tx/bfd_0"
+                        },
+                        {
+                            "colorFrame": [
+                                {
+                                    "tweenEasing": 0,
+                                    "color": {
+                                        "bM": 78,
+                                        "gM": 90,
+                                        "aM": 30
+                                    },
+                                    "duration": 4
+                                },
+                                {
+                                    "tweenEasing": 0,
+                                    "color": {
+                                        "bM": 56,
+                                        "gM": 79
+                                    },
+                                    "duration": 5
+                                },
+                                {
+                                    "color": {
+                                        "bM": 63,
+                                        "gM": 85,
+                                        "aM": 0
+                                    },
+                                    "duration": 15
+                                }
+                            ],
+                            "displayFrame": [
+                                {
+                                    "duration": 4
+                                },
+                                {
+                                    "duration": 5
+                                },
+                                {
+                                    "duration": 15
+                                }
+                            ],
+                            "name": "images/tx/qia2_0"
+                        },
+                        {
+                            "colorFrame": [
+                                {
+                                    "tweenEasing": 0,
+                                    "color": {
+                                        "aM": 12
+                                    },
+                                    "duration": 4
+                                },
+                                {
+                                    "tweenEasing": 0,
+                                    "color": {
+                                        "aM": 24
+                                    },
+                                    "duration": 5
+                                },
+                                {
+                                    "color": {
+                                        "aM": 0
+                                    },
+                                    "duration": 15
+                                }
+                            ],
+                            "displayFrame": [
+                                {
+                                    "duration": 4
+                                },
+                                {
+                                    "duration": 5
+                                },
+                                {
+                                    "duration": 15
+                                }
+                            ],
+                            "name": "images/tx/qia2_1"
+                        },
+                        {
+                            "colorFrame": [
+                                {
+                                    "tweenEasing": 0,
+                                    "duration": 2
+                                },
+                                {
+                                    "tweenEasing": 0,
+                                    "color": {
+                                        "bM": 63,
+                                        "gM": 87,
+                                        "aM": 10
+                                    },
+                                    "duration": 6
+                                },
+                                {
+                                    "color": {
+                                        "bM": 63,
+                                        "gM": 87,
+                                        "aM": 85
+                                    },
+                                    "duration": 7
+                                },
+                                {
+                                    "tweenEasing": 0,
+                                    "color": {
+                                        "bM": 63,
+                                        "gM": 87,
+                                        "aM": 85
+                                    },
+                                    "duration": 8
+                                },
+                                {
+                                    "color": {
+                                        "bM": 63,
+                                        "gM": 87,
+                                        "aM": 0
+                                    },
+                                    "duration": 1
+                                }
+                            ],
+                            "displayFrame": [
+                                {
+                                    "value": -1,
+                                    "duration": 2
+                                },
+                                {
+                                    "duration": 6
+                                },
+                                {
+                                    "duration": 7
+                                },
+                                {
+                                    "duration": 8
+                                },
+                                {
+                                    "duration": 1
+                                }
+                            ],
+                            "name": "images/tx/qib2_0"
+                        }
+                    ],
+                    "ffd": [],
+                    "frame": [],
+                    "name": "damageup",
+                    "duration": 24,
+                    "ik": []
+                }
+            ],
+            "skin": [
+                {
+                    "slot": [
+                        {
+                            "display": [
+                                {
+                                    "path": "images/tx/qib2_0",
+                                    "type": "image",
+                                    "name": "images/tx/qib2_0",
+                                    "transform": {
+                                        "skX": 90,
+                                        "skY": 90,
+                                        "x": 29.63
+                                    }
+                                }
+                            ],
+                            "blendMode": "add",
+                            "name": "images/tx/qib2_0"
+                        },
+                        {
+                            "display": [
+                                {
+                                    "path": "images/tx/bfd_0",
+                                    "type": "image",
+                                    "name": "images/tx/bfd_0",
+                                    "transform": {
+                                        "skX": 90,
+                                        "skY": 90,
+                                        "x": 165.09
+                                    }
+                                },
+                                {
+                                    "path": "images/tx/bfd_1",
+                                    "type": "image",
+                                    "name": "images/tx/bfd_1",
+                                    "transform": {
+                                        "skX": 90,
+                                        "skY": 90,
+                                        "x": 165.09
+                                    }
+                                },
+                                {
+                                    "path": "images/tx/bfd_2",
+                                    "type": "image",
+                                    "name": "images/tx/bfd_2",
+                                    "transform": {
+                                        "skX": 90,
+                                        "skY": 90,
+                                        "x": 165.09
+                                    }
+                                },
+                                {
+                                    "path": "images/tx/bfd_3",
+                                    "type": "image",
+                                    "name": "images/tx/bfd_3",
+                                    "transform": {
+                                        "skX": 90,
+                                        "skY": 90,
+                                        "x": 165.09
+                                    }
+                                },
+                                {
+                                    "path": "images/tx/bfd_4",
+                                    "type": "image",
+                                    "name": "images/tx/bfd_4",
+                                    "transform": {
+                                        "skX": 90,
+                                        "skY": 90,
+                                        "x": 165.09
+                                    }
+                                },
+                                {
+                                    "path": "images/tx/bfd_5",
+                                    "type": "image",
+                                    "name": "images/tx/bfd_5",
+                                    "transform": {
+                                        "skX": 90,
+                                        "skY": 90,
+                                        "x": 165.09
+                                    }
+                                },
+                                {
+                                    "path": "images/tx/bfd_6",
+                                    "type": "image",
+                                    "name": "images/tx/bfd_6",
+                                    "transform": {
+                                        "skX": 90,
+                                        "skY": 90,
+                                        "x": 165.09
+                                    }
+                                },
+                                {
+                                    "path": "images/tx/bfd_7",
+                                    "type": "image",
+                                    "name": "images/tx/bfd_7",
+                                    "transform": {
+                                        "skX": 90,
+                                        "skY": 90,
+                                        "x": 165.09
+                                    }
+                                },
+                                {
+                                    "path": "images/tx/bfd_8",
+                                    "type": "image",
+                                    "name": "images/tx/bfd_8",
+                                    "transform": {
+                                        "skX": 90,
+                                        "skY": 90,
+                                        "x": 165.09
+                                    }
+                                },
+                                {
+                                    "path": "images/tx/bfd_9",
+                                    "type": "image",
+                                    "name": "images/tx/bfd_9",
+                                    "transform": {
+                                        "skX": 90,
+                                        "skY": 90,
+                                        "x": 165.09
+                                    }
+                                },
+                                {
+                                    "path": "images/tx/bfd_10",
+                                    "type": "image",
+                                    "name": "images/tx/bfd_10",
+                                    "transform": {
+                                        "skX": 90,
+                                        "skY": 90,
+                                        "x": 165.09
+                                    }
+                                }
+                            ],
+                            "name": "images/tx/bfd_0"
+                        },
+                        {
+                            "display": [
+                                {
+                                    "path": "images/tx/qia2_0",
+                                    "type": "image",
+                                    "name": "images/tx/qia2_0",
+                                    "transform": {
+                                        "skX": 90,
+                                        "skY": 90,
+                                        "x": 42.33
+                                    }
+                                }
+                            ],
+                            "name": "images/tx/qia2_0"
+                        },
+                        {
+                            "display": [
+                                {
+                                    "path": "images/tx/qia2_0",
+                                    "type": "image",
+                                    "name": "images/tx/qia2_0",
+                                    "transform": {
+                                        "skX": 90,
+                                        "skY": 90,
+                                        "x": 42.33
+                                    }
+                                }
+                            ],
+                            "blendMode": "add",
+                            "name": "images/tx/qia2_1"
+                        }
+                    ],
+                    "name": ""
+                }
+            ],
+            "aabb": {
+                "width": 0,
+                "y": 0,
+                "height": 0,
+                "x": 0
+            },
+            "slot": [
+                {
+                    "displayIndex": -1,
+                    "name": "images/tx/bfd_0",
+                    "parent": "bfd",
+                    "color": {}
+                },
+                {
+                    "z": 1,
+                    "displayIndex": -1,
+                    "name": "images/tx/qia2_0",
+                    "parent": "gd",
+                    "color": {}
+                },
+                {
+                    "blendMode": "add",
+                    "displayIndex": -1,
+                    "z": 2,
+                    "parent": "gd",
+                    "name": "images/tx/qia2_1",
+                    "color": {}
+                },
+                {
+                    "blendMode": "add",
+                    "displayIndex": -1,
+                    "z": 3,
+                    "parent": "gc",
+                    "name": "images/tx/qib2_0",
+                    "color": {}
+                }
+            ],
+            "name": "armature_damageup_buff",
+            "ik": []
+        }
+    ],
+    "name": "damageup_buff",
+    "version": "5.5"
+}

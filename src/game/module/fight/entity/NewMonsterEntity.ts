@@ -2,7 +2,7 @@
  * @Author: zhoulanglang 
  * @Date: 2020-09-18 10:58:51 
  * @Last Modified by: zhoulanglang
- * @Last Modified time: 2020-11-02 16:46:11
+ * @Last Modified time: 2020-12-07 18:31:20
  */
 class NewMonsterEntity {
     active: number[] = []//主动
@@ -14,10 +14,6 @@ class NewMonsterEntity {
     maxHp: number //最大生命上限
     level: number
     star: number
-    hp: number
-    damage: number
-    buff = []
-
 
     computeHp: number //回合演算血量
     computeDamage: number
@@ -28,17 +24,17 @@ class NewMonsterEntity {
         let monsterCfg = GlobalConfig.getMonsterCfg()[data.id]
         this.star = monsterCfg.quality
         this.id = data.id
-        this.damage = data.attack + (data.lv - 1) * data.atkPro
-        this.hp = data.life + (data.lv - 1) * data.lifePro
         this.pos = pos
         this.id = data.id
         this.normal = data.attackID
         let cfg = GlobalConfig.getSkillCfg(data.attackID)
         this.isAD = cfg.harmType == 1
 
-        this.maxHp = this.hp
-        this.computeDamage = this.damage
-        this.computeHp = this.hp
+        let damage = GlobalConfig.getMonsterAttack(data.id, data.lv) //data.attack + (data.lv - 1) * data.atkPro
+        let hp = GlobalConfig.getMonsterHp(data.id, data.lv) //data.life + (data.lv - 1) * data.lifePro
+        this.maxHp = hp
+        this.computeDamage = damage
+        this.computeHp = hp
 
         this.pushSkill(data.skill1)
         this.pushSkill(data.skill2)

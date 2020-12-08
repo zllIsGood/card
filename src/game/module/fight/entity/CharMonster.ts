@@ -53,6 +53,10 @@ class CharMonster extends eui.ItemRenderer {
             this.showAction(MonsterActionType.die)
         }
     }
+    /**请在战斗结束后用 是否死亡*/
+    public isDie() {
+        return this.data.curlife <= 0
+    }
 
     public upDamage(num: number) {
         this.data.attack += num

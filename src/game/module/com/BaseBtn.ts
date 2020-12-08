@@ -2,7 +2,7 @@
  * @Author: zhoualnglang 
  * @Date: 2020-04-01 16:15:07 
  * @Last Modified by: gravitycat
- * @Last Modified time: 2020-10-10 12:04:07
+ * @Last Modified time: 2020-11-30 19:12:05
  */
 class BaseBtn extends eui.Button {
     public miniIcon = ''
@@ -19,6 +19,7 @@ class BaseBtn extends eui.Button {
     }
 
     public open(...param: any[]): void {
+        this.iconDisplay.width = this.width
         this.removeEventListener(egret.TouchEvent.ADDED_TO_STAGE, this.open, this)
         this.addEventListener(egret.TouchEvent.TOUCH_TAP, this.onClick, this)
     }

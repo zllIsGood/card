@@ -9,11 +9,11 @@
 			"name": "loading"
 		},
 		{
-			"keys": "atk_ske_json,atk_tex_json,atk_tex_png,bloodatk_ske_json,bloodatk_tex_json,bloodatk_tex_png,mapbg_ske_json,mapbg_tex_json,mapbg_tex_png,huose_json,huose_png,jnhs_json,jnhs_png,l'sjnfs_json,l'sjnfs_png,newParticle_json,newParticle_png",
+			"keys": "atk_ske_json,atk_tex_json,atk_tex_png,bloodatk_ske_json,bloodatk_tex_json,bloodatk_tex_png,huose_json,huose_png,jnhs_json,jnhs_png,l'sjnfs_json,l'sjnfs_png,newParticle_json,newParticle_png",
 			"name": "dg"
 		},
 		{
-			"keys": "1001_json,1001_png,1004_json,1004_png,1005_json,1005_png,10051_json,10051_png,1006_json,1006_png,10061_json,10061_png,1007_json,1007_png,1008_json,1008_png,1009_json,1009_png,1010_json,1010_png,1011_json,1011_png,1014_json,1014_png,1015_json,1015_png,1019_json,1019_png,1024_json,1024_png,1028_json,1028_png,1029_json,1029_png,1030_json,1030_png,1031_json,1031_png,1032_json,1032_png,die_img_png,frame_ad_mini_png,frame_ad_png,frame_black_mini_png,frame_black_png,frame_fire_mini_png,frame_fire_png,frame_hp_mini_png,frame_hp_png,frame_ice_mini_png,frame_ice_png,frame_sheng_mini_png,frame_sheng_png,frame_thunder_mini_png,frame_thunder_png,fight_break_png,fight_rate2_png,skill_icon1_png,skill_icon2_png,skill_icon3_png,skill_icon4_png,skill_icon5_png,star1_png,star2_png,star3_png,star4_png,star5_png,close_icon_png,gold_png,heor_lab_all_png,info_lab_bg_png,lock_icon_png,not_has_png,return_png,scrol_icon_png,tab_lab_bg_png,tab_select_png,tab_skill_png,ui_panel_png,ungrade_btn_png,upgrade_icon_png,card_number_fnt,card_number_png,fight_num_green_fnt,fight_num_green_png,fnt_shanghai_fnt,fnt_shanghai_png,boder_huangse2_png,boder_lvse1_png,boder_zise4_png,boder_lanse3_png,fight_number_fnt,fight_number_png,card_atk_png,card_hp_png,card_lv_png,lv_icon_hhq2_png,lv_icon_hq4_png,lv_icon_ld3_png,lv_iocn_lq1_png,card_boder_di_png,card_boder_xiadi_png,10091_json,10091_png,10341_json,10341_png,1037_json,1037_png,1039_json,1039_png,1033_json,1033_png,10432_json,10432_png,10434_json,10434_png,1042_json,1042_png,skill_baoji_png,skill_bd_png,skill_benyuansh_png,skill_benyzl_png,skill_bj_png,skill_budong_png,skill_cuih_png,skill_duye_png,skill_dw_png,skill_fasgd_png,skill_fh_png,skill_fssb_png,skill_fsxr_png,skill_fsxx_png,skill_ganling_png,skill_gjtsheng_png,skill_hensao_png,skill_huichun_png,skill_huoqiang_png,skill_huoqiu_png,skill_jidng_png,skill_juji_png,skill_kuangre_png,skill_lhsd_png,skill_lieshang_png,skill_lieyanfengsh_png,skill_luol_png,skill_mianyi_png,skill_mj_png,skill_putonggj_png,skill_qtxr_png,skill_qungongtisheng_png,skill_ranshao_png,skill_sd_png,skill_shixue_png,skill_siqhq_png,skill_siqixj_png,skill_siwgl_png,skill_sqdw_png,skill_sqlhsd_png,skill_sqsd_png,skill_wenyi_png,skill_wlfj_png,skill_wlgd_png,skill_wlsb_png,skill_wlxr_png,skill_wlxx_png,skill_xainjin_png,skill_xuelian_png,skill_zhiliao_png,skill_zhuansheg_png,skill_zibao_png,fight_rate1_png",
+			"keys": "1001_json,1001_png,1004_json,1004_png,1005_json,1005_png,10051_json,10051_png,1006_json,1006_png,10061_json,10061_png,1007_json,1007_png,1008_json,1008_png,1009_json,1009_png,1010_json,1010_png,1011_json,1011_png,1014_json,1014_png,1015_json,1015_png,1019_json,1019_png,1024_json,1024_png,1028_json,1028_png,1029_json,1029_png,1030_json,1030_png,1031_json,1031_png,1032_json,1032_png,die_img_png,frame_ad_mini_png,frame_ad_png,frame_black_mini_png,frame_black_png,frame_fire_mini_png,frame_fire_png,frame_hp_mini_png,frame_hp_png,frame_ice_mini_png,frame_ice_png,frame_sheng_mini_png,frame_sheng_png,frame_thunder_mini_png,frame_thunder_png,fight_break_png,fight_rate2_png,skill_icon1_png,skill_icon2_png,skill_icon3_png,skill_icon4_png,skill_icon5_png,star1_png,star2_png,star3_png,star4_png,star5_png,close_icon_png,gold_png,heor_lab_all_png,info_lab_bg_png,lock_icon_png,not_has_png,return_png,scrol_icon_png,tab_lab_bg_png,tab_select_png,tab_skill_png,ui_panel_png,ungrade_btn_png,upgrade_icon_png,card_number_fnt,card_number_png,fight_num_green_fnt,fight_num_green_png,fnt_shanghai_fnt,fnt_shanghai_png,boder_huangse2_png,boder_lvse1_png,boder_zise4_png,boder_lanse3_png,fight_number_fnt,fight_number_png,card_atk_png,card_hp_png,card_lv_png,lv_icon_hhq2_png,lv_icon_hq4_png,lv_icon_ld3_png,lv_iocn_lq1_png,card_boder_di_png,card_boder_xiadi_png,10091_json,10091_png,10341_json,10341_png,1037_json,1037_png,1039_json,1039_png,1033_json,1033_png,10432_json,10432_png,10434_json,10434_png,1042_json,1042_png,skill_baoji_png,skill_bd_png,skill_benyuansh_png,skill_benyzl_png,skill_bj_png,skill_budong_png,skill_cuih_png,skill_duye_png,skill_dw_png,skill_fasgd_png,skill_fh_png,skill_fssb_png,skill_fsxr_png,skill_fsxx_png,skill_ganling_png,skill_gjtsheng_png,skill_hensao_png,skill_huichun_png,skill_huoqiang_png,skill_huoqiu_png,skill_juji_png,skill_kuangre_png,skill_lhsd_png,skill_lieshang_png,skill_lieyanfengsh_png,skill_luol_png,skill_mianyi_png,skill_mj_png,skill_putonggj_png,skill_qtxr_png,skill_qungongtisheng_png,skill_ranshao_png,skill_sd_png,skill_shixue_png,skill_siqhq_png,skill_siqixj_png,skill_siwgl_png,skill_sqdw_png,skill_sqlhsd_png,skill_sqsd_png,skill_wenyi_png,skill_wlfj_png,skill_wlgd_png,skill_wlsb_png,skill_wlxr_png,skill_wlxx_png,skill_xainjin_png,skill_xuelian_png,skill_zhiliao_png,skill_zhuansheg_png,skill_zibao_png,fight_rate1_png,fightbg_png,question_boder_dikuang_png,question_boder_hentiao_png,question_tx_chouqujineng_png,boder_xuankuang_png,icon_shizhong_png,countdown_png,countdown_fnt,aws1_png,aws2_png,aws3_png,aws4_png,boder_datik_png,boder_txbieren_png,boder_txkzji_png,cuohao_png,duihao_png,selectbtn_png,boder_nqd_png,boder_nqt_png,question_tx_chouqujineng2_png",
 			"name": "fight"
 		}
 	],
@@ -1239,21 +1239,6 @@
 			"name": "1042_json"
 		},
 		{
-			"url": "res/dg/mapbg_tex.png",
-			"type": "image",
-			"name": "mapbg_tex_png"
-		},
-		{
-			"url": "res/dg/mapbg_tex.json",
-			"type": "json",
-			"name": "mapbg_tex_json"
-		},
-		{
-			"url": "res/dg/mapbg_ske.json",
-			"type": "json",
-			"name": "mapbg_ske_json"
-		},
-		{
 			"url": "assets/music/1004.mp3",
 			"type": "sound",
 			"name": "1004_mp3"
@@ -1452,11 +1437,6 @@
 			"url": "assets/skillname/skill_huoqiu.png",
 			"type": "image",
 			"name": "skill_huoqiu_png"
-		},
-		{
-			"url": "assets/skillname/skill_jidng.png",
-			"type": "image",
-			"name": "skill_jidng_png"
 		},
 		{
 			"url": "assets/skillname/skill_juji.png",
@@ -1662,6 +1642,112 @@
 			"url": "assets/fight/fight_rate1.png",
 			"type": "image",
 			"name": "fight_rate1_png"
+		},
+		{
+			"url": "assets/answerui/boder_datik.png",
+			"type": "image",
+			"name": "boder_datik_png"
+		},
+		{
+			"url": "assets/answerui/boder_txbieren.png",
+			"type": "image",
+			"name": "boder_txbieren_png"
+		},
+		{
+			"url": "assets/answerui/boder_txkzji.png",
+			"type": "image",
+			"name": "boder_txkzji_png"
+		},
+		{
+			"url": "assets/answerui/aws4.png",
+			"type": "image",
+			"name": "aws4_png"
+		},
+		{
+			"url": "assets/answerui/aws3.png",
+			"type": "image",
+			"name": "aws3_png"
+		},
+		{
+			"url": "assets/answerui/aws1.png",
+			"type": "image",
+			"name": "aws1_png"
+		},
+		{
+			"url": "assets/answerui/aws2.png",
+			"type": "image",
+			"name": "aws2_png"
+		},
+		{
+			"url": "assets/answerui/cuohao.png",
+			"type": "image",
+			"name": "cuohao_png"
+		},
+		{
+			"url": "assets/answerui/duihao.png",
+			"type": "image",
+			"name": "duihao_png"
+		},
+		{
+			"url": "assets/fight/fightbg.png",
+			"type": "image",
+			"name": "fightbg_png"
+		},
+		{
+			"url": "assets/fight/question_boder_dikuang.png",
+			"type": "image",
+			"name": "question_boder_dikuang_png"
+		},
+		{
+			"url": "assets/fight/question_boder_hentiao.png",
+			"type": "image",
+			"name": "question_boder_hentiao_png"
+		},
+		{
+			"url": "assets/fight/question_tx_chouqujineng.png",
+			"type": "image",
+			"name": "question_tx_chouqujineng_png"
+		},
+		{
+			"url": "assets/answerui/boder_xuankuang.png",
+			"type": "image",
+			"name": "boder_xuankuang_png"
+		},
+		{
+			"url": "assets/answerui/icon_shizhong.png",
+			"type": "image",
+			"name": "icon_shizhong_png"
+		},
+		{
+			"url": "assets/fnt/countdown.png",
+			"type": "image",
+			"name": "countdown_png"
+		},
+		{
+			"url": "assets/fnt/countdown.fnt",
+			"type": "font",
+			"name": "countdown_fnt"
+		},
+		{
+			"url": "assets/answerui/selectbtn.png",
+			"type": "image",
+			"name": "selectbtn_png",
+			"scale9grid": "14,14,7,5"
+		},
+		{
+			"url": "assets/answerui/boder_nqd.png",
+			"type": "image",
+			"name": "boder_nqd_png"
+		},
+		{
+			"url": "assets/answerui/boder_nqt.png",
+			"type": "image",
+			"name": "boder_nqt_png"
+		},
+		{
+			"url": "assets/fight/question_tx_chouqujineng2.png",
+			"type": "image",
+			"name": "question_tx_chouqujineng2_png"
 		}
 	]
 }

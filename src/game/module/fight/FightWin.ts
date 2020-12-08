@@ -1,39 +1,52 @@
 /* 战斗ui界面
  * @Author: zhoulanglang 
  * @Date: 2020-10-09 15:37:50 
- * @Last Modified by: zhoulanglang
- * @Last Modified time: 2020-11-04 14:58:59
+ * @Last Modified by: gravitycat
+ * @Last Modified time: 2020-12-01 15:30:31
  */
 class FightWin extends BaseEuiView {
-    xImg: BaseBtn
-    breakImg: BaseBtn
-
+    ownPwBar: eui.ProgressBar//我方能量条 
+    enemyPwBar: eui.ProgressBar//对方能量条
+    subjectitems: SubjectItem//题目信息组件
+    imgAvaEnemy: eui.Image//对方头像
+    imgAvaOwn: eui.Image//自己头像
+    rectTouch: eui.Rect
     public constructor() {
         super();
         this.skinName = 'FightSkin'
     }
 
     public open(...param: any[]): void {
-        this.addTouchEvent(this.xImg, this.onClick);
-        this.addTouchEvent(this.breakImg, this.onClick);
-
+        this.observe(QuestionModel.ins().postBar, this.upView)
+        QuestionModel.ins().initSubjects(this.subjectitems)
         this.upView()
+        if (!FightManager.ins().isTest) {
+            let matchData = FightModel.ins().fightData
+            this.imgAvaEnemy.source = matchData.matchInfo.userInfo.avatar
+            this.imgAvaOwn.source = matchData.userInfo.userInfo.avatar
+        }
         SoundManager.ins().playBg()
     }
 
     mapView: MapView
+    parGroup: eui.Group
     private upView() {
+        if (QuestionModel.ins().isPlaying) {
+            this.rectTouch.visible = true
+        }
+        else {
+            this.rectTouch.visible = false
+        }
         if (this.mapView == null) {
             this.mapView = FightManager.ins().mapView
             this.addChildAt(this.mapView, 0)
         }
-        let rate = FightManager.ins().rate
-        if (rate == 1) {
-            this.xImg.icon = 'fight_rate1_png'
+        if (this.parGroup == null) {
+            this.parGroup = FightManager.ins().parGroup
+            this.addChild(this.parGroup)
         }
-        else if (rate == 2) {
-            this.xImg.icon = 'fight_rate2_png'
-        }
+        this.ownPwBar.value = QuestionModel.ins().ownBar
+        this.enemyPwBar.value = QuestionModel.ins().enemyBar
 
     }
 
@@ -42,30 +55,6 @@ class FightWin extends BaseEuiView {
         SoundManager.ins().stopBg()
     }
 
-    private onClick(e: egret.TouchEvent): void {
-        switch (e.currentTarget) {
-            case this.xImg:
-                let rate = FightManager.ins().rate
-                if (rate == 1) {
-                    FightManager.ins().setRate(2)
-                    this.xImg.icon = 'fight_rate2_png'
-                }
-                else if (rate == 2) {
-                    FightManager.ins().setRate(1)
-                    this.xImg.icon = 'fight_rate1_png'
-                }
-                break;
-            case this.breakImg:
-                if (Main.gamePlatform == Main.platformH5) {
-                    if (!UserModel.ins().isVip) {
-                        TipModel.ins().show({ icon: null, title: "开通vip才可以跳过噢~" })
-                        break;
-                    }
-                }
-                FightManager.ins().setBreak()
-                break;
-        }
-    }
 
 }
 ViewManager.ins().reg(FightWin, LayerManager.UI_Popup);

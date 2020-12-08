@@ -103,6 +103,19 @@ class MathUtils {
 		return arr[index];
 	}
 
+	/**
+	 * @param  {Array<any>} arr 数组
+	 * @param  {number} getCount 需要获取的数量
+	 * @returns any 返回一个新的数组
+	 */
+	public static randomArrayByCount(arr: Array<any>, getCount: number): any {
+		let newarr = new Array<any>();
+		for (let i = 0; i < getCount; i++) {
+			newarr.push(MathUtils.randomArray(arr))
+		}
+		return newarr;
+	}
+
 	/**取整 */
 	public static toInteger(value: number): number {
 		return value >> 0;

@@ -1,14 +1,21 @@
 /*
  * @Author: zhoulanglang 
  * @Date: 2020-09-19 12:12:24 
- * @Last Modified by: gravitycat
- * @Last Modified time: 2020-09-21 19:03:19
+ * @Last Modified by: zhoulanglang
+ * @Last Modified time: 2020-11-24 15:03:17
  */
 class SkillType7 extends SkillTypeBase {
     skilltype = 1007
 
-    attack(skill, entity: NewMonsterEntity): { atker: NewMonsterEntity, atked: NewMonsterEntity[] } {
-        let other = RoundPlay.ins().getObjects(entity.pos, skill.object)
+    attack(skill, entity: NewMonsterEntity, specialPos: -1 | -2): { atker: NewMonsterEntity, atked: NewMonsterEntity[] } {
+        let pos: number
+        if (entity) {
+            pos = entity.pos
+        }
+        else {
+            pos = specialPos == -1 ? 0 : 6
+        }
+        let other = RoundPlay.ins().getObjects(pos, skill.object)
         if (other.length == 0) {
             return null
         }
@@ -21,7 +28,7 @@ class SkillType7 extends SkillTypeBase {
             if (enemy) {
                 atked.push(enemy)
                 let hp = MathUtils.limitInteger(rans[0], rans[1])
-                enemy.harmHp(hp, skill.harmType, entity.pos)
+                enemy.harmHp(hp, skill.harmType, entity ? entity.pos : -1)
             }
         }
         return { atker: entity, atked: atked }

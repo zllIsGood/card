@@ -1,10 +1,30 @@
 <?xml version="1.0" encoding="utf-8"?>
 <e:Skin class="FightSkin" width="750" height="1334" xmlns:ns1="*" xmlns:e="http://ns.egret.com/eui"
         xmlns:w="http://ns.egret.com/wing">
-    <!--<e:Rect left="0" right="0" top="0" bottom="0" fillAlpha="0.7" />
-    -->
-    <e:Group width="750" height="1334" horizontalCenter="0" verticalCenter="0" touchEnabled="false">
-			<ns1:BaseBtn skinName="BaseBtnSkin" icon="fight_rate2_png" bottom="24" left="65" id="xImg"/>
-			<ns1:BaseBtn x="490" y="1095" skinName="BaseBtnSkin" icon="fight_break_png" bottom="24" right="65"  id="breakImg"/>
-    </e:Group>
+	<!--<e:Rect left="0" right="0" top="0" bottom="0" fillAlpha="0.7" />
+	-->
+	<e:Group width="750" height="1334" horizontalCenter="0" verticalCenter="0" touchEnabled="false">
+		<e:Image id="subjectBg" source="boder_datik_png" x="7" bottom="47" visible="false" />
+		<ns1:SubjectItem id="subjectitems" skinName="SubJectItemSkin" visible="true" x="0" bottom="48" />
+		<e:ProgressBar id="ownPwBar" skinName="PowerProgressSkin" bottom="8" right="75" value="0" maximum="100"
+		               direction="rtl" />
+		<e:Image source="boder_txkzji_png" bottom="0" right="0" />
+		<e:ProgressBar id="enemyPwBar" skinName="PowerProgressSkin" top="15" left="75" value="0" />
+		<e:Image source="boder_txbieren_png" top="0" left="0" />
+		<e:Rect id="rectTouch" width="750" height="200" anchorOffsetX="0" anchorOffsetY="0" fillColor="0x4F4949" fillAlpha="0"
+		        visible="false" horizontalCenter="0" bottom="48" />
+		<e:Image id="imgAvaEnemy"
+		         source="http://zm-dub-dev.oss-cn-shenzhen.aliyuncs.com/material/2020-02-12/Rg2VKDEU-544796120770023424.png"
+		         scaleX="0.44" scaleY="0.44" width="210" height="210" horizontalCenter="-342.5" verticalCenter="-644.5"
+		         mask="{this.rectbg2}" />
+		<e:Image id="imgAvaOwn" scaleY="0.5" scaleX="0.5" width="210" height="210" horizontalCenter="349.5"
+		         verticalCenter="632.5" source="http://cdndev.zmfamily.cn/upload/2020-12-01/IMG_CMP_20201201_17211404.jpeg"
+		         mask="{this.rectbg}" />
+		<e:Rect id="rectbg" width="105" height="105" fillColor="0xFDEF63" ellipseWidth="210" ellipseHeight="210"
+		        strokeAlpha="1" blendMode="normal" fillAlpha="1" strokeColor="0xFFFF00" horizontalCenter="349.5"
+		        verticalCenter="632.5" />
+		<e:Rect id="rectbg2" width="92.4" height="92.4" fillColor="0xFDEF63" ellipseWidth="184.8" ellipseHeight="184.8"
+		        strokeAlpha="1" blendMode="normal" fillAlpha="1" strokeColor="0xFFFF00" horizontalCenter="-342.5"
+		        verticalCenter="-644.5" />
+	</e:Group>
 </e:Skin>

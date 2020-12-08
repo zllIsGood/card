@@ -2,7 +2,7 @@
  * @Author: zhoulanglang 
  * @Date: 2020-11-02 11:53:25 
  * @Last Modified by: zhoulanglang
- * @Last Modified time: 2020-11-02 14:57:23
+ * @Last Modified time: 2020-11-28 18:14:08
  */
 class SkillNameManager extends BaseClass {
     public static ins(): SkillNameManager {
@@ -37,4 +37,18 @@ class SkillNameManager extends BaseClass {
         })
     }
 
+    /**pos位置 700ms*/
+    public async playSpecialName(pos: number, rate: number) {
+        let item = new SkillNameItem()
+        let data = pos == -1 ? QuestionModel.ins().ownSkill : QuestionModel.ins().enemySkill
+        data.pos = pos
+        item.data = data
+
+        await TimerManager.ins().deleyPromisse(10)
+        let mapView = FightManager.ins().mapView
+        mapView._bloodLayer.addChild(item)
+        item.x = 375 - item.height / 2
+        item.y = 580 - item.width / 2
+        item.playTw()
+    }
 }

@@ -12,12 +12,6 @@
                 "up",
                 "down"
             ]
-        },
-        {
-            "armature": "armature_mapbg",
-            "action": [
-                "mapbg"
-            ]
         }
     ]
 }

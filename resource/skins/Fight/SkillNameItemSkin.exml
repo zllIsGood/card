@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<e:Skin class="SkillNameItemSkin" width="355" height="286" xmlns:ns1="*" xmlns:e="http://ns.egret.com/eui"
+        xmlns:w="http://ns.egret.com/wing">
+    <e:Group id="sgrp" x="0" y="0" width="355" height="286">
+        <e:Image y="0" x="0" source="question_boder_dikuang_png" />
+        <e:Image id="img" y="10" source="question_tx_chouqujineng_png" horizontalCenter="3.5" />
+        <e:Group id="grp" x="82" y="135" width="186">
+            <e:Image x="0" y="0" source="skill_benyzl_png" />
+            <e:Image source="skill_benyzl_png" x="0" y="65" />
+            <e:Image source="skill_benyzl_png" x="0" y="-65" />
+        </e:Group>
+        <e:Image y="125" x="69" source="question_boder_hentiao_png" />
+    </e:Group>
+</e:Skin>

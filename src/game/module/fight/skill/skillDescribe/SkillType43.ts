@@ -1,8 +1,8 @@
 /* 属性攻击
  * @Author: gravitycat 
  * @Date: 2020-09-19 12:12:05 
- * @Last Modified by: gravitycat
- * @Last Modified time: 2020-09-22 10:43:43
+ * @Last Modified by: zhoulanglang
+ * @Last Modified time: 2020-12-07 14:27:19
  */
 class SkillType43 extends SkillTypeBase {
     skilltype = 1043
@@ -12,7 +12,7 @@ class SkillType43 extends SkillTypeBase {
         if (other.length == 0) {
             return null
         }
-        let num = entity.damage
+        let num = entity.computeDamage
         let atked = []
         let enemy = other[0]
         atked.push(enemy)

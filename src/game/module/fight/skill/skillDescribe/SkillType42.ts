@@ -1,8 +1,8 @@
 /* 物理攻击
  * @Author: gravitycat 
  * @Date: 2020-09-19 12:25:04 
- * @Last Modified by: gravitycat
- * @Last Modified time: 2020-09-19 15:21:30
+ * @Last Modified by: zhoulanglang
+ * @Last Modified time: 2020-12-07 14:28:59
  */
 class SkillType42 extends SkillTypeBase {
     skilltype = 1042
@@ -12,7 +12,7 @@ class SkillType42 extends SkillTypeBase {
         if (other.length == 0) {
             return null
         }
-        let num = entity.damage
+        let num = entity.computeDamage
         let atked = []
         let enemy = other[0]
         atked.push(enemy)

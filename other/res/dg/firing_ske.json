@@ -1,0 +1,1156 @@
+{
+    "frameRate": 30,
+    "isGlobal": 0,
+    "armature": [
+        {
+            "defaultActions": [
+                {
+                    "gotoAndPlay": "firing"
+                }
+            ],
+            "bone": [
+                {
+                    "name": "root",
+                    "transform": {}
+                },
+                {
+                    "length": 6,
+                    "transform": {
+                        "skX": 90,
+                        "skY": 90
+                    },
+                    "parent": "root",
+                    "name": "bone"
+                },
+                {
+                    "length": 6,
+                    "transform": {
+                        "skX": 90,
+                        "skY": 90
+                    },
+                    "parent": "root",
+                    "name": "bone2"
+                }
+            ],
+            "type": "Armature",
+            "frameRate": 30,
+            "animation": [
+                {
+                    "bone": [
+                        {
+                            "rotateFrame": [
+                                {
+                                    "duration": 22
+                                }
+                            ],
+                            "scaleFrame": [
+                                {
+                                    "duration": 22
+                                }
+                            ],
+                            "name": "bone",
+                            "translateFrame": [
+                                {
+                                    "y": -93.68,
+                                    "duration": 22,
+                                    "x": -15.78
+                                }
+                            ]
+                        },
+                        {
+                            "rotateFrame": [
+                                {
+                                    "duration": 22
+                                }
+                            ],
+                            "scaleFrame": [
+                                {
+                                    "y": -1,
+                                    "duration": 22
+                                }
+                            ],
+                            "name": "bone2",
+                            "translateFrame": [
+                                {
+                                    "y": -101.99,
+                                    "duration": 22
+                                }
+                            ]
+                        },
+                        {
+                            "rotateFrame": [],
+                            "scaleFrame": [],
+                            "name": "root",
+                            "translateFrame": []
+                        }
+                    ],
+                    "slot": [
+                        {
+                            "colorFrame": [
+                                {
+                                    "tweenEasing": 0,
+                                    "duration": 2
+                                },
+                                {
+                                    "tweenEasing": 0,
+                                    "duration": 2
+                                },
+                                {
+                                    "tweenEasing": 0,
+                                    "duration": 2
+                                },
+                                {
+                                    "tweenEasing": 0,
+                                    "duration": 2
+                                },
+                                {
+                                    "tweenEasing": 0,
+                                    "duration": 2
+                                },
+                                {
+                                    "tweenEasing": 0,
+                                    "duration": 2
+                                },
+                                {
+                                    "tweenEasing": 0,
+                                    "duration": 2
+                                },
+                                {
+                                    "tweenEasing": 0,
+                                    "duration": 2
+                                },
+                                {
+                                    "tweenEasing": 0,
+                                    "duration": 2
+                                },
+                                {
+                                    "tweenEasing": 0,
+                                    "duration": 2
+                                },
+                                {
+                                    "tweenEasing": 0,
+                                    "duration": 2
+                                },
+                                {
+                                    "duration": 0
+                                }
+                            ],
+                            "displayFrame": [
+                                {
+                                    "value": -1,
+                                    "duration": 2
+                                },
+                                {
+                                    "value": 1,
+                                    "duration": 2
+                                },
+                                {
+                                    "value": 2,
+                                    "duration": 2
+                                },
+                                {
+                                    "value": 3,
+                                    "duration": 2
+                                },
+                                {
+                                    "value": 4,
+                                    "duration": 2
+                                },
+                                {
+                                    "value": 5,
+                                    "duration": 2
+                                },
+                                {
+                                    "value": 6,
+                                    "duration": 2
+                                },
+                                {
+                                    "value": 7,
+                                    "duration": 2
+                                },
+                                {
+                                    "value": 8,
+                                    "duration": 2
+                                },
+                                {
+                                    "value": 9,
+                                    "duration": 2
+                                },
+                                {
+                                    "value": 10,
+                                    "duration": 2
+                                },
+                                {
+                                    "value": -1,
+                                    "duration": 0
+                                }
+                            ],
+                            "name": "image/jineng1/jineng0Effects"
+                        },
+                        {
+                            "colorFrame": [
+                                {
+                                    "tweenEasing": 0,
+                                    "duration": 2
+                                },
+                                {
+                                    "tweenEasing": 0,
+                                    "duration": 2
+                                },
+                                {
+                                    "tweenEasing": 0,
+                                    "duration": 2
+                                },
+                                {
+                                    "tweenEasing": 0,
+                                    "duration": 2
+                                },
+                                {
+                                    "tweenEasing": 0,
+                                    "duration": 2
+                                },
+                                {
+                                    "tweenEasing": 0,
+                                    "duration": 2
+                                },
+                                {
+                                    "tweenEasing": 0,
+                                    "duration": 2
+                                },
+                                {
+                                    "tweenEasing": 0,
+                                    "duration": 2
+                                },
+                                {
+                                    "tweenEasing": 0,
+                                    "duration": 2
+                                },
+                                {
+                                    "tweenEasing": 0,
+                                    "duration": 2
+                                },
+                                {
+                                    "tweenEasing": 0,
+                                    "duration": 2
+                                },
+                                {
+                                    "duration": 0
+                                }
+                            ],
+                            "displayFrame": [
+                                {
+                                    "value": -1,
+                                    "duration": 2
+                                },
+                                {
+                                    "value": 1,
+                                    "duration": 2
+                                },
+                                {
+                                    "value": 2,
+                                    "duration": 2
+                                },
+                                {
+                                    "value": 3,
+                                    "duration": 2
+                                },
+                                {
+                                    "value": 4,
+                                    "duration": 2
+                                },
+                                {
+                                    "value": 5,
+                                    "duration": 2
+                                },
+                                {
+                                    "value": 6,
+                                    "duration": 2
+                                },
+                                {
+                                    "value": 7,
+                                    "duration": 2
+                                },
+                                {
+                                    "value": 8,
+                                    "duration": 2
+                                },
+                                {
+                                    "value": 9,
+                                    "duration": 2
+                                },
+                                {
+                                    "value": 10,
+                                    "duration": 2
+                                },
+                                {
+                                    "value": -1,
+                                    "duration": 0
+                                }
+                            ],
+                            "name": "image/jineng1/jineng0Effects2"
+                        },
+                        {
+                            "colorFrame": [
+                                {
+                                    "tweenEasing": 0,
+                                    "duration": 1
+                                },
+                                {
+                                    "tweenEasing": 0,
+                                    "duration": 2
+                                },
+                                {
+                                    "tweenEasing": 0,
+                                    "duration": 2
+                                },
+                                {
+                                    "tweenEasing": 0,
+                                    "duration": 2
+                                },
+                                {
+                                    "tweenEasing": 0,
+                                    "duration": 2
+                                },
+                                {
+                                    "tweenEasing": 0,
+                                    "duration": 2
+                                },
+                                {
+                                    "tweenEasing": 0,
+                                    "duration": 2
+                                },
+                                {
+                                    "tweenEasing": 0,
+                                    "duration": 2
+                                },
+                                {
+                                    "tweenEasing": 0,
+                                    "duration": 2
+                                },
+                                {
+                                    "tweenEasing": 0,
+                                    "duration": 2
+                                },
+                                {
+                                    "tweenEasing": 0,
+                                    "duration": 2
+                                },
+                                {
+                                    "duration": 1
+                                }
+                            ],
+                            "displayFrame": [
+                                {
+                                    "value": -1,
+                                    "duration": 1
+                                },
+                                {
+                                    "duration": 2
+                                },
+                                {
+                                    "value": 1,
+                                    "duration": 2
+                                },
+                                {
+                                    "value": 2,
+                                    "duration": 2
+                                },
+                                {
+                                    "value": 3,
+                                    "duration": 2
+                                },
+                                {
+                                    "value": 4,
+                                    "duration": 2
+                                },
+                                {
+                                    "value": 5,
+                                    "duration": 2
+                                },
+                                {
+                                    "value": 7,
+                                    "duration": 2
+                                },
+                                {
+                                    "value": 8,
+                                    "duration": 2
+                                },
+                                {
+                                    "value": 9,
+                                    "duration": 2
+                                },
+                                {
+                                    "value": 10,
+                                    "duration": 2
+                                },
+                                {
+                                    "value": -1,
+                                    "duration": 1
+                                }
+                            ],
+                            "name": "image/jineng1/jineng0Effects3"
+                        },
+                        {
+                            "colorFrame": [
+                                {
+                                    "tweenEasing": 0,
+                                    "duration": 1
+                                },
+                                {
+                                    "tweenEasing": 0,
+                                    "duration": 2
+                                },
+                                {
+                                    "tweenEasing": 0,
+                                    "duration": 2
+                                },
+                                {
+                                    "tweenEasing": 0,
+                                    "duration": 2
+                                },
+                                {
+                                    "tweenEasing": 0,
+                                    "duration": 2
+                                },
+                                {
+                                    "tweenEasing": 0,
+                                    "duration": 2
+                                },
+                                {
+                                    "tweenEasing": 0,
+                                    "duration": 2
+                                },
+                                {
+                                    "tweenEasing": 0,
+                                    "duration": 2
+                                },
+                                {
+                                    "tweenEasing": 0,
+                                    "duration": 2
+                                },
+                                {
+                                    "tweenEasing": 0,
+                                    "duration": 2
+                                },
+                                {
+                                    "tweenEasing": 0,
+                                    "duration": 2
+                                },
+                                {
+                                    "duration": 1
+                                }
+                            ],
+                            "displayFrame": [
+                                {
+                                    "value": 2,
+                                    "duration": 1
+                                },
+                                {
+                                    "duration": 2
+                                },
+                                {
+                                    "value": 1,
+                                    "duration": 2
+                                },
+                                {
+                                    "value": 2,
+                                    "duration": 2
+                                },
+                                {
+                                    "value": 3,
+                                    "duration": 2
+                                },
+                                {
+                                    "value": 4,
+                                    "duration": 2
+                                },
+                                {
+                                    "value": 5,
+                                    "duration": 2
+                                },
+                                {
+                                    "value": 7,
+                                    "duration": 2
+                                },
+                                {
+                                    "value": 8,
+                                    "duration": 2
+                                },
+                                {
+                                    "value": 9,
+                                    "duration": 2
+                                },
+                                {
+                                    "value": 10,
+                                    "duration": 2
+                                },
+                                {
+                                    "value": -1,
+                                    "duration": 1
+                                }
+                            ],
+                            "name": "image/jineng1/jineng0Effects4"
+                        }
+                    ],
+                    "ffd": [],
+                    "frame": [
+                        {
+                            "tweenEasing": null,
+                            "duration": 0,
+                            "events": [
+                                {
+                                    "name": "damage"
+                                }
+                            ]
+                        }
+                    ],
+                    "name": "firing",
+                    "duration": 22,
+                    "ik": []
+                }
+            ],
+            "skin": [
+                {
+                    "slot": [
+                        {
+                            "display": [
+                                {
+                                    "path": "image/jineng1/jineng0Effects_b01",
+                                    "type": "image",
+                                    "name": "image/jineng1/jineng0Effects_b01",
+                                    "transform": {
+                                        "scY": 0.65,
+                                        "y": -25.48,
+                                        "skX": -90,
+                                        "skY": -90,
+                                        "scX": 0.65,
+                                        "x": 75.56
+                                    }
+                                },
+                                {
+                                    "path": "image/jineng1/jineng0Effects_b04",
+                                    "type": "image",
+                                    "name": "image/jineng1/jineng0Effects_b04",
+                                    "transform": {
+                                        "scY": 0.65,
+                                        "y": -25.48,
+                                        "skX": -90,
+                                        "skY": -90,
+                                        "scX": 0.65,
+                                        "x": 75.56
+                                    }
+                                },
+                                {
+                                    "path": "image/jineng1/jineng0Effects_b07",
+                                    "type": "image",
+                                    "name": "image/jineng1/jineng0Effects_b07",
+                                    "transform": {
+                                        "scY": 0.65,
+                                        "y": -25.48,
+                                        "skX": -90,
+                                        "skY": -90,
+                                        "scX": 0.65,
+                                        "x": 75.56
+                                    }
+                                },
+                                {
+                                    "path": "image/jineng1/jineng0Effects_b10",
+                                    "type": "image",
+                                    "name": "image/jineng1/jineng0Effects_b10",
+                                    "transform": {
+                                        "scY": 0.65,
+                                        "y": -25.48,
+                                        "skX": -90,
+                                        "skY": -90,
+                                        "scX": 0.65,
+                                        "x": 75.56
+                                    }
+                                },
+                                {
+                                    "path": "image/jineng1/jineng0Effects_b13",
+                                    "type": "image",
+                                    "name": "image/jineng1/jineng0Effects_b13",
+                                    "transform": {
+                                        "scY": 0.65,
+                                        "y": -25.48,
+                                        "skX": -90,
+                                        "skY": -90,
+                                        "scX": 0.65,
+                                        "x": 75.56
+                                    }
+                                },
+                                {
+                                    "path": "image/jineng1/jineng0Effects_b16",
+                                    "type": "image",
+                                    "name": "image/jineng1/jineng0Effects_b16",
+                                    "transform": {
+                                        "scY": 0.65,
+                                        "y": -25.48,
+                                        "skX": -90,
+                                        "skY": -90,
+                                        "scX": 0.65,
+                                        "x": 75.56
+                                    }
+                                },
+                                {
+                                    "path": "image/jineng1/jineng0Effects_b19",
+                                    "type": "image",
+                                    "name": "image/jineng1/jineng0Effects_b19",
+                                    "transform": {
+                                        "scY": 0.65,
+                                        "y": -25.48,
+                                        "skX": -90,
+                                        "skY": -90,
+                                        "scX": 0.65,
+                                        "x": 75.56
+                                    }
+                                },
+                                {
+                                    "path": "image/jineng1/jineng0Effects_b22",
+                                    "type": "image",
+                                    "name": "image/jineng1/jineng0Effects_b22",
+                                    "transform": {
+                                        "scY": 0.65,
+                                        "y": -25.48,
+                                        "skX": -90,
+                                        "skY": -90,
+                                        "scX": 0.65,
+                                        "x": 75.56
+                                    }
+                                },
+                                {
+                                    "path": "image/jineng1/jineng0Effects_b25",
+                                    "type": "image",
+                                    "name": "image/jineng1/jineng0Effects_b25",
+                                    "transform": {
+                                        "scY": 0.65,
+                                        "y": -25.48,
+                                        "skX": -90,
+                                        "skY": -90,
+                                        "scX": 0.65,
+                                        "x": 75.56
+                                    }
+                                },
+                                {
+                                    "path": "image/jineng1/jineng0Effects_b28",
+                                    "type": "image",
+                                    "name": "image/jineng1/jineng0Effects_b28",
+                                    "transform": {
+                                        "scY": 0.65,
+                                        "y": -25.48,
+                                        "skX": -90,
+                                        "skY": -90,
+                                        "scX": 0.65,
+                                        "x": 75.56
+                                    }
+                                },
+                                {
+                                    "path": "image/jineng1/jineng0Effects_b31",
+                                    "type": "image",
+                                    "name": "image/jineng1/jineng0Effects_b31",
+                                    "transform": {
+                                        "scY": 0.65,
+                                        "y": -25.48,
+                                        "skX": -90,
+                                        "skY": -90,
+                                        "scX": 0.65,
+                                        "x": 75.56
+                                    }
+                                }
+                            ],
+                            "blendMode": "add",
+                            "name": "image/jineng1/jineng0Effects4"
+                        },
+                        {
+                            "display": [
+                                {
+                                    "path": "image/jineng1/jineng0Effects_b01",
+                                    "type": "image",
+                                    "name": "image/jineng1/jineng0Effects_b01",
+                                    "transform": {
+                                        "scY": 0.65,
+                                        "y": -25.48,
+                                        "skX": -90,
+                                        "skY": -90,
+                                        "scX": 0.65,
+                                        "x": 75.56
+                                    }
+                                },
+                                {
+                                    "path": "image/jineng1/jineng0Effects_b04",
+                                    "type": "image",
+                                    "name": "image/jineng1/jineng0Effects_b04",
+                                    "transform": {
+                                        "scY": 0.65,
+                                        "y": -25.48,
+                                        "skX": -90,
+                                        "skY": -90,
+                                        "scX": 0.65,
+                                        "x": 75.56
+                                    }
+                                },
+                                {
+                                    "path": "image/jineng1/jineng0Effects_b07",
+                                    "type": "image",
+                                    "name": "image/jineng1/jineng0Effects_b07",
+                                    "transform": {
+                                        "scY": 0.65,
+                                        "y": -25.48,
+                                        "skX": -90,
+                                        "skY": -90,
+                                        "scX": 0.65,
+                                        "x": 75.56
+                                    }
+                                },
+                                {
+                                    "path": "image/jineng1/jineng0Effects_b10",
+                                    "type": "image",
+                                    "name": "image/jineng1/jineng0Effects_b10",
+                                    "transform": {
+                                        "scY": 0.65,
+                                        "y": -25.48,
+                                        "skX": -90,
+                                        "skY": -90,
+                                        "scX": 0.65,
+                                        "x": 75.56
+                                    }
+                                },
+                                {
+                                    "path": "image/jineng1/jineng0Effects_b13",
+                                    "type": "image",
+                                    "name": "image/jineng1/jineng0Effects_b13",
+                                    "transform": {
+                                        "scY": 0.65,
+                                        "y": -25.48,
+                                        "skX": -90,
+                                        "skY": -90,
+                                        "scX": 0.65,
+                                        "x": 75.56
+                                    }
+                                },
+                                {
+                                    "path": "image/jineng1/jineng0Effects_b16",
+                                    "type": "image",
+                                    "name": "image/jineng1/jineng0Effects_b16",
+                                    "transform": {
+                                        "scY": 0.65,
+                                        "y": -25.48,
+                                        "skX": -90,
+                                        "skY": -90,
+                                        "scX": 0.65,
+                                        "x": 75.56
+                                    }
+                                },
+                                {
+                                    "path": "image/jineng1/jineng0Effects_b19",
+                                    "type": "image",
+                                    "name": "image/jineng1/jineng0Effects_b19",
+                                    "transform": {
+                                        "scY": 0.65,
+                                        "y": -25.48,
+                                        "skX": -90,
+                                        "skY": -90,
+                                        "scX": 0.65,
+                                        "x": 75.56
+                                    }
+                                },
+                                {
+                                    "path": "image/jineng1/jineng0Effects_b22",
+                                    "type": "image",
+                                    "name": "image/jineng1/jineng0Effects_b22",
+                                    "transform": {
+                                        "scY": 0.65,
+                                        "y": -25.48,
+                                        "skX": -90,
+                                        "skY": -90,
+                                        "scX": 0.65,
+                                        "x": 75.56
+                                    }
+                                },
+                                {
+                                    "path": "image/jineng1/jineng0Effects_b25",
+                                    "type": "image",
+                                    "name": "image/jineng1/jineng0Effects_b25",
+                                    "transform": {
+                                        "scY": 0.65,
+                                        "y": -25.48,
+                                        "skX": -90,
+                                        "skY": -90,
+                                        "scX": 0.65,
+                                        "x": 75.56
+                                    }
+                                },
+                                {
+                                    "path": "image/jineng1/jineng0Effects_b28",
+                                    "type": "image",
+                                    "name": "image/jineng1/jineng0Effects_b28",
+                                    "transform": {
+                                        "scY": 0.65,
+                                        "y": -25.48,
+                                        "skX": -90,
+                                        "skY": -90,
+                                        "scX": 0.65,
+                                        "x": 75.56
+                                    }
+                                },
+                                {
+                                    "path": "image/jineng1/jineng0Effects_b31",
+                                    "type": "image",
+                                    "name": "image/jineng1/jineng0Effects_b31",
+                                    "transform": {
+                                        "scY": 0.65,
+                                        "y": -25.48,
+                                        "skX": -90,
+                                        "skY": -90,
+                                        "scX": 0.65,
+                                        "x": 75.56
+                                    }
+                                }
+                            ],
+                            "name": "image/jineng1/jineng0Effects"
+                        },
+                        {
+                            "display": [
+                                {
+                                    "path": "image/jineng1/jineng0Effects_b01",
+                                    "type": "image",
+                                    "name": "image/jineng1/jineng0Effects_b01",
+                                    "transform": {
+                                        "scY": 0.65,
+                                        "y": -25.48,
+                                        "skX": -90,
+                                        "skY": -90,
+                                        "scX": 0.65,
+                                        "x": 75.56
+                                    }
+                                },
+                                {
+                                    "path": "image/jineng1/jineng0Effects_b04",
+                                    "type": "image",
+                                    "name": "image/jineng1/jineng0Effects_b04",
+                                    "transform": {
+                                        "scY": 0.65,
+                                        "y": -25.48,
+                                        "skX": -90,
+                                        "skY": -90,
+                                        "scX": 0.65,
+                                        "x": 75.56
+                                    }
+                                },
+                                {
+                                    "path": "image/jineng1/jineng0Effects_b07",
+                                    "type": "image",
+                                    "name": "image/jineng1/jineng0Effects_b07",
+                                    "transform": {
+                                        "scY": 0.65,
+                                        "y": -25.48,
+                                        "skX": -90,
+                                        "skY": -90,
+                                        "scX": 0.65,
+                                        "x": 75.56
+                                    }
+                                },
+                                {
+                                    "path": "image/jineng1/jineng0Effects_b10",
+                                    "type": "image",
+                                    "name": "image/jineng1/jineng0Effects_b10",
+                                    "transform": {
+                                        "scY": 0.65,
+                                        "y": -25.48,
+                                        "skX": -90,
+                                        "skY": -90,
+                                        "scX": 0.65,
+                                        "x": 75.56
+                                    }
+                                },
+                                {
+                                    "path": "image/jineng1/jineng0Effects_b13",
+                                    "type": "image",
+                                    "name": "image/jineng1/jineng0Effects_b13",
+                                    "transform": {
+                                        "scY": 0.65,
+                                        "y": -25.48,
+                                        "skX": -90,
+                                        "skY": -90,
+                                        "scX": 0.65,
+                                        "x": 75.56
+                                    }
+                                },
+                                {
+                                    "path": "image/jineng1/jineng0Effects_b16",
+                                    "type": "image",
+                                    "name": "image/jineng1/jineng0Effects_b16",
+                                    "transform": {
+                                        "scY": 0.65,
+                                        "y": -25.48,
+                                        "skX": -90,
+                                        "skY": -90,
+                                        "scX": 0.65,
+                                        "x": 75.56
+                                    }
+                                },
+                                {
+                                    "path": "image/jineng1/jineng0Effects_b19",
+                                    "type": "image",
+                                    "name": "image/jineng1/jineng0Effects_b19",
+                                    "transform": {
+                                        "scY": 0.65,
+                                        "y": -25.48,
+                                        "skX": -90,
+                                        "skY": -90,
+                                        "scX": 0.65,
+                                        "x": 75.56
+                                    }
+                                },
+                                {
+                                    "path": "image/jineng1/jineng0Effects_b22",
+                                    "type": "image",
+                                    "name": "image/jineng1/jineng0Effects_b22",
+                                    "transform": {
+                                        "scY": 0.65,
+                                        "y": -25.48,
+                                        "skX": -90,
+                                        "skY": -90,
+                                        "scX": 0.65,
+                                        "x": 75.56
+                                    }
+                                },
+                                {
+                                    "path": "image/jineng1/jineng0Effects_b25",
+                                    "type": "image",
+                                    "name": "image/jineng1/jineng0Effects_b25",
+                                    "transform": {
+                                        "scY": 0.65,
+                                        "y": -25.48,
+                                        "skX": -90,
+                                        "skY": -90,
+                                        "scX": 0.65,
+                                        "x": 75.56
+                                    }
+                                },
+                                {
+                                    "path": "image/jineng1/jineng0Effects_b28",
+                                    "type": "image",
+                                    "name": "image/jineng1/jineng0Effects_b28",
+                                    "transform": {
+                                        "scY": 0.65,
+                                        "y": -25.48,
+                                        "skX": -90,
+                                        "skY": -90,
+                                        "scX": 0.65,
+                                        "x": 75.56
+                                    }
+                                },
+                                {
+                                    "path": "image/jineng1/jineng0Effects_b31",
+                                    "type": "image",
+                                    "name": "image/jineng1/jineng0Effects_b31",
+                                    "transform": {
+                                        "scY": 0.65,
+                                        "y": -25.48,
+                                        "skX": -90,
+                                        "skY": -90,
+                                        "scX": 0.65,
+                                        "x": 75.56
+                                    }
+                                }
+                            ],
+                            "blendMode": "add",
+                            "name": "image/jineng1/jineng0Effects2"
+                        },
+                        {
+                            "display": [
+                                {
+                                    "path": "image/jineng1/jineng0Effects_b01",
+                                    "type": "image",
+                                    "name": "image/jineng1/jineng0Effects_b01",
+                                    "transform": {
+                                        "scY": 0.65,
+                                        "y": -25.48,
+                                        "skX": -90,
+                                        "skY": -90,
+                                        "scX": 0.65,
+                                        "x": 75.56
+                                    }
+                                },
+                                {
+                                    "path": "image/jineng1/jineng0Effects_b04",
+                                    "type": "image",
+                                    "name": "image/jineng1/jineng0Effects_b04",
+                                    "transform": {
+                                        "scY": 0.65,
+                                        "y": -25.48,
+                                        "skX": -90,
+                                        "skY": -90,
+                                        "scX": 0.65,
+                                        "x": 75.56
+                                    }
+                                },
+                                {
+                                    "path": "image/jineng1/jineng0Effects_b07",
+                                    "type": "image",
+                                    "name": "image/jineng1/jineng0Effects_b07",
+                                    "transform": {
+                                        "scY": 0.65,
+                                        "y": -25.48,
+                                        "skX": -90,
+                                        "skY": -90,
+                                        "scX": 0.65,
+                                        "x": 75.56
+                                    }
+                                },
+                                {
+                                    "path": "image/jineng1/jineng0Effects_b10",
+                                    "type": "image",
+                                    "name": "image/jineng1/jineng0Effects_b10",
+                                    "transform": {
+                                        "scY": 0.65,
+                                        "y": -25.48,
+                                        "skX": -90,
+                                        "skY": -90,
+                                        "scX": 0.65,
+                                        "x": 75.56
+                                    }
+                                },
+                                {
+                                    "path": "image/jineng1/jineng0Effects_b13",
+                                    "type": "image",
+                                    "name": "image/jineng1/jineng0Effects_b13",
+                                    "transform": {
+                                        "scY": 0.65,
+                                        "y": -25.48,
+                                        "skX": -90,
+                                        "skY": -90,
+                                        "scX": 0.65,
+                                        "x": 75.56
+                                    }
+                                },
+                                {
+                                    "path": "image/jineng1/jineng0Effects_b16",
+                                    "type": "image",
+                                    "name": "image/jineng1/jineng0Effects_b16",
+                                    "transform": {
+                                        "scY": 0.65,
+                                        "y": -25.48,
+                                        "skX": -90,
+                                        "skY": -90,
+                                        "scX": 0.65,
+                                        "x": 75.56
+                                    }
+                                },
+                                {
+                                    "path": "image/jineng1/jineng0Effects_b19",
+                                    "type": "image",
+                                    "name": "image/jineng1/jineng0Effects_b19",
+                                    "transform": {
+                                        "scY": 0.65,
+                                        "y": -25.48,
+                                        "skX": -90,
+                                        "skY": -90,
+                                        "scX": 0.65,
+                                        "x": 75.56
+                                    }
+                                },
+                                {
+                                    "path": "image/jineng1/jineng0Effects_b22",
+                                    "type": "image",
+                                    "name": "image/jineng1/jineng0Effects_b22",
+                                    "transform": {
+                                        "scY": 0.65,
+                                        "y": -25.48,
+                                        "skX": -90,
+                                        "skY": -90,
+                                        "scX": 0.65,
+                                        "x": 75.56
+                                    }
+                                },
+                                {
+                                    "path": "image/jineng1/jineng0Effects_b25",
+                                    "type": "image",
+                                    "name": "image/jineng1/jineng0Effects_b25",
+                                    "transform": {
+                                        "scY": 0.65,
+                                        "y": -25.48,
+                                        "skX": -90,
+                                        "skY": -90,
+                                        "scX": 0.65,
+                                        "x": 75.56
+                                    }
+                                },
+                                {
+                                    "path": "image/jineng1/jineng0Effects_b28",
+                                    "type": "image",
+                                    "name": "image/jineng1/jineng0Effects_b28",
+                                    "transform": {
+                                        "scY": 0.65,
+                                        "y": -25.48,
+                                        "skX": -90,
+                                        "skY": -90,
+                                        "scX": 0.65,
+                                        "x": 75.56
+                                    }
+                                },
+                                {
+                                    "path": "image/jineng1/jineng0Effects_b31",
+                                    "type": "image",
+                                    "name": "image/jineng1/jineng0Effects_b31",
+                                    "transform": {
+                                        "scY": 0.65,
+                                        "y": -25.48,
+                                        "skX": -90,
+                                        "skY": -90,
+                                        "scX": 0.65,
+                                        "x": 75.56
+                                    }
+                                }
+                            ],
+                            "name": "image/jineng1/jineng0Effects3"
+                        }
+                    ],
+                    "name": ""
+                }
+            ],
+            "aabb": {
+                "width": 81,
+                "y": 34.56,
+                "height": 82,
+                "x": -15.019999999999996
+            },
+            "slot": [
+                {
+                    "displayIndex": 2,
+                    "name": "image/jineng1/jineng0Effects",
+                    "parent": "bone",
+                    "color": {}
+                },
+                {
+                    "z": 1,
+                    "displayIndex": 2,
+                    "name": "image/jineng1/jineng0Effects3",
+                    "parent": "bone2",
+                    "color": {}
+                },
+                {
+                    "blendMode": "add",
+                    "displayIndex": 2,
+                    "z": 2,
+                    "parent": "bone",
+                    "name": "image/jineng1/jineng0Effects2",
+                    "color": {}
+                },
+                {
+                    "blendMode": "add",
+                    "displayIndex": 2,
+                    "z": 3,
+                    "parent": "bone2",
+                    "name": "image/jineng1/jineng0Effects4",
+                    "color": {}
+                }
+            ],
+            "name": "armature_firing",
+            "ik": []
+        }
+    ],
+    "name": "firing",
+    "version": "5.5"
+}

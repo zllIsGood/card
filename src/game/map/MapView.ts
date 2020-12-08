@@ -5,7 +5,7 @@
 class MapView extends eui.Group {
 
 	/**地图背景 */
-	private _mapImage: DragonBonesManage;
+	private _mapImage: eui.Image //: DragonBonesManage;
 
 	///////////////////////////////对象层////////////////////////////////////
 	// /**物品掉落对象层 */
@@ -33,19 +33,21 @@ class MapView extends eui.Group {
 	}
 
 	public initMap(): void {
-		let skillStr = 'mapbg'
-		let actions: string[] = [skillStr]
-		if (skillStr.indexOf('_') > 0) {
-			actions[0] = skillStr.split('_')[1]
-			skillStr = skillStr.split('_')[0]
-		}
-		let mc = new DragonBonesManage()
-		mc.register(DragonBonesFactory.ins().makeArmature("armature_" + skillStr, skillStr, 1), actions)
-		if (mc.play(actions[0], 0)) {
-			mc.armature.getClock().timeScale = 1
-		}
-		mc.x = 750 / 2 - 38.5
-		mc.y = 1334 / 2
+		// let skillStr = 'mapbg'
+		// let actions: string[] = [skillStr]
+		// if (skillStr.indexOf('_') > 0) {
+		// 	actions[0] = skillStr.split('_')[1]
+		// 	skillStr = skillStr.split('_')[0]
+		// }
+		// let mc = new DragonBonesManage()
+		// mc.register(DragonBonesFactory.ins().makeArmature("armature_" + skillStr, skillStr, 1), actions)
+		// if (mc.play(actions[0], 0)) {
+		// 	mc.armature.getClock().timeScale = 1
+		// }
+		// mc.x = 750 / 2 - 38.5
+		// mc.y = 1334 / 2
+		let mc = new eui.Image()
+		mc.source = 'fightbg_png'
 		this._mapImage = mc
 		this.addChild(this._mapImage);
 
@@ -66,9 +68,9 @@ class MapView extends eui.Group {
 	}
 
 	public showFightEntity() {
-		if (this._mapImage) {
-			this._mapImage.start()
-		}
+		// if (this._mapImage) {
+		// 	this._mapImage.start()
+		// }
 
 		this.clearAllLayer()
 		let points = FightData.points
@@ -88,7 +90,7 @@ class MapView extends eui.Group {
 					lv: ran.level,
 					star: ran.star,
 				}
-				obj.data = { pos: i + 1, name: cardcfg.name, life: ran.maxHp, curlife: ran.maxHp, attack: ran.damage, id: ran.id, lv: ran.level }
+				obj.data = { pos: i + 1, name: cardcfg.name, life: ran.maxHp, curlife: ran.maxHp, attack: ran.computeDamage, id: ran.id, lv: ran.level }
 				this._entityLayer.addChild(obj)
 				FightManager.ins().charMonsters.push(obj)
 			}

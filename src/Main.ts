@@ -67,14 +67,14 @@ class Main extends eui.UILayer {
 		RES.setMaxLoadingThread(4);
 		//适配方式
 		StageUtils.ins().resetMode()
-		// egret.lifecycle.onPause = () => {
-		// 	egret.ticker.pause();
-		// 	SoundManager.ins().setEffectOn(false)
-		// }
-		// egret.lifecycle.onResume = () => {
-		// 	egret.ticker.resume();
-		// 	SoundManager.ins().setEffectOn(true)
-		// }
+		egret.lifecycle.onPause = () => {
+			// egret.ticker.pause();
+			SoundManager.ins().setBgOn(false)
+		}
+		egret.lifecycle.onResume = () => {
+			// egret.ticker.resume();
+			SoundManager.ins().setBgOn(true)
+		}
 
 		this.runGame().catch(e => {
 			console.log(e);

@@ -2,7 +2,7 @@
  * @Author: zhoualnglang 
  * @Date: 2020-04-21 11:20:05 
  * @Last Modified by: zhoulanglang
- * @Last Modified time: 2020-11-04 14:37:05
+ * @Last Modified time: 2020-11-23 17:25:36
  */
 class App extends BaseClass {
     public static isPC() {
@@ -24,6 +24,12 @@ class App extends BaseClass {
     /*h5战斗结束*/
     public endPlayH5(bool: boolean) {
         H5Service.H5Result(bool)
+    }
+    /**websocket*/
+    public connectWS() {
+        Socket.ins().initServer('192.168.0.115', 5000)
+        // Socket.ins().initServer('192.168.0.248', 5000)
+        Socket.ins().connect()
     }
 
     public getResRoot() {
@@ -165,7 +171,7 @@ class App extends BaseClass {
         }
     }
     /**反馈*/
-    public async  reqSave(detail = 'test') {
+    public async reqSave(detail = 'test') {
         return new Promise((resolve, reject) => {
             if (Main.gamePlatform == Main.platformApp || Main.gamePlatform == Main.platformTT) {
                 let obj = {
@@ -194,7 +200,7 @@ class App extends BaseClass {
         })
     }
 
-    public async  reqAd() {
+    public async reqAd() {
         return new Promise((resolve, reject) => {
             if (Main.gamePlatform == Main.platformApp || Main.gamePlatform == Main.platformTT) {
                 let obj = {

@@ -14,7 +14,7 @@ function H5StartFight(data: string) {
         console.log('重复调用战斗了')
         return
     }
-    // console.log('开始战斗10012:', data)
+    // console.log('开始战斗:', data)
     data = StringUtils.deleteChangeLine(data)
     // data.replace('\\', '\\\\')
     // console.log(data)

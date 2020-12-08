@@ -1,8 +1,8 @@
 /*
  * @Author: zhoualnglang 
  * @Date: 2020-03-31 11:27:54 
- * @Last Modified by: gravitycat
- * @Last Modified time: 2020-10-21 11:15:47
+ * @Last Modified by: zhoulanglang
+ * @Last Modified time: 2020-12-07 18:39:11
  */
 class GlobalConfig {
 
@@ -11,6 +11,7 @@ class GlobalConfig {
         this.config = data
         this.initSkill()
         this.initMonster()
+        this.initQuestion()
     }
 
     public static initDG(data) {
@@ -50,7 +51,21 @@ class GlobalConfig {
         }
     }
 
-
+    public static initQuestion() {
+        let cfg = this.config.questionConfig
+        let count = 0
+        for (let i in cfg) {
+            let item = cfg[i]
+            count++
+            if (item.trueAnswer == "B") {
+                item.trueAnswer = option.B
+            }
+            if (item.trueAnswer == "A") {
+                item.trueAnswer = option.A
+            }
+        }
+        cfg.length = count
+    }
 
     public static init2(data) {
         // console.log(data)
@@ -78,7 +93,7 @@ class GlobalConfig {
     }
     public static testCfg
 
-    public static config: { skillConfig, monsterConfig }
+    public static config: { skillConfig, monsterConfig, questionConfig }
 
 
 
@@ -90,19 +105,22 @@ class GlobalConfig {
         return ret
     }
 
+    public static getQuestions() {
+        return this.config.questionConfig
+    }
     public static getMonsterCfg() {
         return this.config.monsterConfig
     }
     /**攻击力*/
     public static getMonsterAttack(id: number, lv: number) {
         let cfg = this.config.monsterConfig[id]
-        let ret = cfg.attack + (lv - 1) * cfg.atkPro
+        let ret = cfg.attack + (lv >= cfg.minLv ? (lv - cfg.minLv) : 0) * cfg.atkPro
         return ret
     }
     /**生命值*/
     public static getMonsterHp(id: number, lv: number) {
         let cfg = this.config.monsterConfig[id]
-        let ret = cfg.life + (lv - 1) * cfg.lifePro
+        let ret = cfg.life + (lv >= cfg.minLv ? (lv - cfg.minLv) : 0) * cfg.lifePro
         return ret
     }
 

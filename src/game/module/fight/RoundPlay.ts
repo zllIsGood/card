@@ -2,7 +2,7 @@
  * @Author: gravitycat 
  * @Date: 2020-09-09 18:01:00 
  * @Last Modified by: zhoulanglang
- * @Last Modified time: 2020-11-04 18:36:10
+ * @Last Modified time: 2020-11-28 18:38:18
  */
 class RoundPlay extends BaseClass {
     public constructor() {
@@ -27,10 +27,10 @@ class RoundPlay extends BaseClass {
         }
         else {
             let fightData = FightModel.ins().fightData
-            enemy = [null, null, null, null, null, null, null]
+            enemy = [null, null, null, null, null, null]
             let enemyArr = fightData.matchMatrixList
-            let enemyZoom2 = UserModel.ins().isZoomOK2(fightData.matchInfo.dan, fightData.matchInfo.lv)
-            let enemyZoom3 = UserModel.ins().isZoomOK3(fightData.matchInfo.dan, fightData.matchInfo.lv)
+            let enemyZoom2 = UserModel.ins().isZoomOK2(fightData.matchInfo.userInfo.dan, fightData.matchInfo.userInfo.lv)
+            let enemyZoom3 = UserModel.ins().isZoomOK3(fightData.matchInfo.userInfo.dan, fightData.matchInfo.userInfo.lv)
             for (let i in enemyArr) {
                 let item = enemyArr[i]
                 let cfg = GlobalConfig.getMonsterCfg()[item.cardId]
@@ -47,10 +47,10 @@ class RoundPlay extends BaseClass {
                 enemy[item.position - 1] = data
             }
 
-            our = [null, null, null, null, null, null, null]
+            our = [null, null, null, null, null, null]
             let ourArr = fightData.userMatrixList
-            let ourZoom2 = UserModel.ins().isZoomOK2(fightData.userInfo.dan, fightData.userInfo.lv)
-            let ourZoom3 = UserModel.ins().isZoomOK3(fightData.userInfo.dan, fightData.userInfo.lv)
+            let ourZoom2 = UserModel.ins().isZoomOK2(fightData.userInfo.userInfo.dan, fightData.userInfo.userInfo.lv)
+            let ourZoom3 = UserModel.ins().isZoomOK3(fightData.userInfo.userInfo.dan, fightData.userInfo.userInfo.lv)
             for (let i in ourArr) {
                 let item = ourArr[i]
                 let cfg = GlobalConfig.getMonsterCfg()[item.cardId]
@@ -159,6 +159,30 @@ class RoundPlay extends BaseClass {
             item.clearComputeData()
             this._dieContractHandle()
         }
+    }
+    /**主公技能计算 pos -1己对敌|-2敌对己 */
+    public computeSpecial(pos: number, skillid: number) {
+        let isEnd = this.isEnd()
+        if (isEnd) {
+            return null
+        }
+        let cfg = GlobalConfig.getSkillCfg(skillid)
+        let skillType = SkillTypeBase.getType(cfg.type)
+        let obj = skillType.attack(cfg, null, pos)
+        if (obj == null) {
+            return null
+        }
+        let data = { isQuestion: true, skillId: skillid, atker: { pos: pos }, atked: [] }
+        for (let ientity of obj.atked) {
+            let obj = { pos: ientity.pos, computeData: ientity.computeData }
+            data.atked.push(obj)
+            ientity.clearComputeData()
+        }
+        this.roundData.push(data)
+        this._dieContractHandle()
+        let list = this.roundData
+        this.roundData = []
+        return list
     }
     private computeSingle(item: NewMonsterEntity, id: number) {
         let cfg = GlobalConfig.getSkillCfg(id)
@@ -316,7 +340,7 @@ class RoundPlay extends BaseClass {
             item.clearComputeData(2)
             return false
         }
-        else if (computeData.dieBoom.pos == -1) {
+        else if (computeData.dieBoom.pos == -1) { //对全部
             let boomeds = this.getObjects(item.pos, 0)
             if (boomeds.length > 0) {
                 let data = { isDieBoom: true, atker: null, atked: [] }
@@ -336,7 +360,7 @@ class RoundPlay extends BaseClass {
             item.clearComputeData(2)
             return false
         }
-        else if (computeData.dieBoom.pos == -2) {
+        else if (computeData.dieBoom.pos == -2) { //丢失攻击目标
             item.clearComputeData(2)
             return false
         }
@@ -344,35 +368,64 @@ class RoundPlay extends BaseClass {
         return false
     }
 
-    roundList = []
+    roundList: any[][] = []
     roundData = []
+    maxRound = 50 //最大回合数 超过就结束战斗
+    roundNum = 0 //当前回合数
+    roundIndex = 0 //位置0-11
     private startRound() {
-        for (let i = 0; i < 6; i++) {
-            let isEnd = this.isEnd()
-            if (isEnd) {
-                break;
-            }
-            let item = this.monsters[i]
-            if (item && !item.isDie()) {
-                this.compute(item)
-            }
-
-            isEnd = this.isEnd()
-            if (isEnd) {
-                break;
-            }
-            let enemy = this.monsters[i + 6]
-            if (enemy && !enemy.isDie()) {
-                this.compute(enemy)
-            }
+        this.roundNum = 0
+        this.roundIndex = 11
+    }
+    /**实时回合演算*/
+    public rounding() {
+        let list = []
+        while (list && list.length == 0) {
+            list = this.getRound()
         }
-        this.roundList.push(this.roundData)
-        this.roundData = []
-
+        return list
+    }
+    private getRound() {
         let isEnd = this.isEnd()
-        if (!isEnd) {
-            this.startRound()
+        if (isEnd) {
+            return null
         }
+        this.getNextIndex()
+        let item = this.monsters[this.roundIndex]
+
+        if (this.maxRound < this.roundNum) {
+            console.log('超过最大回合数结束战斗！')
+            return null
+        }
+        this.compute(item)
+        let list = this.roundData
+        this.roundData = []
+        return list
+    }
+
+    private getNextIndex() {
+        let bool = true
+        while (bool) {
+            if (this.roundIndex >= 11) {
+                this.roundIndex = 0
+                this.roundNum++
+            }
+            else {
+                let i = this.roundIndex >= 6 ? (this.roundIndex - 6) : this.roundIndex
+                this.roundIndex = this.roundIndex >= 6 ? (i + 1) : (i + 6)
+                if (this.roundIndex >= 12) {
+                    this.roundIndex = 0
+                    this.roundNum++
+                }
+            }
+
+            let item = this.monsters[this.roundIndex]
+            if (item && !item.isDie()) {
+                bool = false
+                return this.roundIndex
+            }
+        }
+
     }
 
     /**是否结束 即某一方是否全部死亡*/
@@ -396,14 +449,14 @@ class RoundPlay extends BaseClass {
     }
 
     public isWin() {
-        let ourDie = true
-        for (let i = 0; i < 6; i++) {
+        let enemyDie = true
+        for (let i = 6; i < 12; i++) {
             let item = this.monsters[i]
             if (item && !item.isDie()) {
-                ourDie = false
+                enemyDie = false
             }
         }
-        let bool = !ourDie
+        let bool = enemyDie
         return bool
     }
 }

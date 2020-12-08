@@ -13,9 +13,47 @@ class FightModel extends BaseClass {
     public constructor() {
         super();
     }
+    /**获取己方 段位dan  lv  星级star*/
+    public getOwnZoom() {
+        if (FightManager.ins().isTest) {
+            return { dan: ZoomLevel.Bronze, lv: 1, star: 1 }
+        }
+        let data = this.fightData.userInfo.userInfo
+        return { dan: data.dan, lv: data.lv, star: data.star }
+    }
+    /**获取敌方 段位dan  lv  星级star*/
+    public getEnemyZoom() {
+        if (FightManager.ins().isTest) {
+            return { dan: ZoomLevel.Bronze, lv: 1, star: 1 }
+        }
+        let data = this.fightData.matchInfo.userInfo
+        return { dan: data.dan, lv: data.lv, star: data.star }
+    }
+    /**获取对战双方id*/
+    public getID() {
+        if (FightManager.ins().isTest) {
+            if (this.isFirst) {
+                return { own: 136, enemy: 317 }
+            }
+            else {
+                return { own: 317, enemy: 136 }
+            }
+        }
+        let own = this.fightData.userInfo.userInfo
+        let enemy = this.fightData.matchInfo.userInfo
+        return { own: own.userId, enemy: enemy.userId }
+    }
+    /**是否对战先出手*/
+    public isFirst = true
+    /**是否是PVP*/
+    public isPVP() {
+        if (FightManager.ins().isTest) {
+            return false
+        }
+        return !!this.fightData.isPVP
+    }
 
-
-    public fightData: { id: number, matchInfo, userInfo, userMatrixList: any[], matchMatrixList: any[] }
+    public fightData: { id: number, matchInfo, userInfo, userMatrixList: any[], matchMatrixList: any[], isPVP?: boolean }
     public setFightData(data) {
         this.fightData = data
     }
